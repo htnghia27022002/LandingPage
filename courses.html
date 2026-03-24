@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chương trình môn học ngành Truyền thông đa phương tiện theo từng năm học">
+    <title>Môn Học | Truyền thông Đa phương tiện</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+    
+    <!-- AOS - Scroll Animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Media Arts</span>
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Trang chủ</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">Giới thiệu</a></li>
+                    <li class="nav__item"><a href="courses.html" class="nav__link active">Môn học</a></li>
+                    <li class="nav__item"><a href="activities.html" class="nav__link">Hoạt động</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Liên hệ</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Page Hero -->
+        <section class="page-hero" style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);">
+            <div class="container">
+                <div class="page-hero__content" data-aos="fade-up">
+                    <h1 class="page-hero__title" style="color: white;">Chương Trình Môn Học</h1>
+                    <p class="page-hero__description" style="color: var(--color-off-white);">
+                        Khám phá các môn học theo từng năm đào tạo
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Curriculum Section with Tabs -->
+        <section class="curriculum section">
+            <div class="container">
+                <div class="curriculum__container" data-tabs-container>
+                    <!-- Tab Buttons -->
+                    <div class="tabs" data-aos="fade-up">
+                        <button class="tab__button active" data-tab="year1" role="tab" aria-selected="true">Năm 1</button>
+                        <button class="tab__button" data-tab="year2" role="tab" aria-selected="false">Năm 2</button>
+                        <button class="tab__button" data-tab="year3" role="tab" aria-selected="false">Năm 3</button>
+                        <button class="tab__button" data-tab="year4" role="tab" aria-selected="false">Năm 4</button>
+                    </div>
+
+                    <!-- Tab Content - Năm 1 -->
+                    <div class="tab__content active" id="year1" data-tab-content="year1" role="tabpanel" aria-hidden="false">
+                        <div class="curriculum__grid">
+                            <div class="course__card" data-aos="zoom-in">
+                                <div class="course__header">
+                                    <i class="fas fa-pencil-ruler"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Nguyên lý Thiết kế cơ bản</h4>
+                                <p class="course__desc">Học các nguyên tắc thiết kế, màu sắc, typography và composition</p>
+                                <div class="course__tags">
+                                    <span class="tag">Đồ họa</span>
+                                </div>
+                            </div>
+
+                            <div class="course__card" data-aos="zoom-in" data-aos-delay="100">
+                                <div class="course__header">
+                                    <i class="fas fa-camera"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Nhiếp ảnh cơ bản</h4>
+                                <p class="course__desc">Kỹ thuật chụp ảnh, ánh sáng, composition và xử lý ảnh cơ bản</p>
+                                <div class="course__tags">
+                                    <span class="tag">Media</span>
+                                </div>
+                            </div>
+
+                            <div class="course__card" data-aos="zoom-in" data-aos-delay="200">
+                                <div class="course__header">
+                                    <i class="fas fa-paint-brush"></i>
+                                    <span class="course__credits">4 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Vẽ kỹ thuật số</h4>
+                                <p class="course__desc">Digital painting, illustration techniques, và công cụ digital art</p>
+                                <div class="course__tags">
+                                    <span class="tag">Đồ họa</span>
+                                </div>
+                            </div>
+
+                            <div class="course__card" data-aos="zoom-in" data-aos-delay="300">
+                                <div class="course__header">
+                                    <i class="fas fa-palette"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Lý thuyết Màu sắc</h4>
+                                <p class="course__desc">Color theory, psychology of colors, và ứng dụng trong thiết kế</p>
+                                <div class="course__tags">
+                                    <span class="tag">Đồ họa</span>
+                                </div>
+                            </div>
+
+                            <div class="course__card" data-aos="zoom-in" data-aos-delay="400">
+                                <div class="course__header">
+                                    <i class="fas fa-font"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Typography</h4>
+                                <p class="course__desc">Nghệ thuật chữ, font pairing, và typographic hierarchy</p>
+                                <div class="course__tags">
+                                    <span class="tag">Đồ họa</span>
+                                </div>
+                            </div>
+
+                            <div class="course__card" data-aos="zoom-in" data-aos-delay="500">
+                                <div class="course__header">
+                                    <i class="fas fa-laptop-code"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Tin học ứng dụng</h4>
+                                <p class="course__desc">Kỹ năng máy tính cơ bản, file management, và software basics</p>
+                                <div class="course__tags">
+                                    <span class="tag">Media</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab Content - Năm 2 -->
+                    <div class="tab__content" id="year2" data-tab-content="year2" role="tabpanel" aria-hidden="true">
+                        <div class="curriculum__grid">
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-vector-square"></i>
+                                    <span class="course__credits">4 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Thiết kế Đồ họa Nâng cao</h4>
+                                <p class="course__desc">Adobe Photoshop, Illustrator advanced techniques, branding design</p>
+                                <div class="course__tags">
+                                    <span class="tag">Đồ họa</span>
+                                </div>
+                            </div>
+
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-video"></i>
+                                    <span class="course__credits">4 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Dựng Video & Hậu kỳ</h4>
+                                <p class="course__desc">Adobe Premiere Pro, Final Cut Pro, video editing workflows</p>
+                                <div class="course__tags">
+                                    <span class="tag">Video</span>
+                                </div>
+                            </div>
+
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-wand-magic-sparkles"></i>
+                                    <span class="course__credits">4 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Motion Graphics</h4>
+                                <p class="course__desc">After Effects basics, animation principles, kinetic typography</p>
+                                <div class="course__tags">
+                                    <span class="tag">Animation</span>
+                                </div>
+                            </div>
+
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-mobile-screen"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">UI/UX Design</h4>
+                                <p class="course__desc">User interface design, user experience, prototyping với Figma</p>
+                                <div class="course__tags">
+                                    <span class="tag">Đồ họa</span>
+                                </div>
+                            </div>
+
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-film"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Quay phim cơ bản</h4>
+                                <p class="course__desc">Camera techniques, lighting, cinematography fundamentals</p>
+                                <div class="course__tags">
+                                    <span class="tag">Video</span>
+                                </div>
+                            </div>
+
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-share-nodes"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Social Media Marketing</h4>
+                                <p class="course__desc">Chiến lược social media, content planning, engagement strategies</p>
+                                <div class="course__tags">
+                                    <span class="tag">Media</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab Content - Năm 3 -->
+                    <div class="tab__content" id="year3" data-tab-content="year3" role="tabpanel" aria-hidden="true">
+                        <div class="curriculum__grid">
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-cube"></i>
+                                    <span class="course__credits">4 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Animation 3D</h4>
+                                <p class="course__desc">Blender, Cinema 4D, 3D modeling, texturing, và animation</p>
+                                <div class="course__tags">
+                                    <span class="tag">Animation</span>
+                                </div>
+                            </div>
+
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-sparkles"></i>
+                                    <span class="course__credits">4 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Visual Effects (VFX)</h4>
+                                <p class="course__desc">Compositing, green screen, particle effects, visual effects techniques</p>
+                                <div class="course__tags">
+                                    <span class="tag">Video</span>
+                                </div>
+                            </div>
+
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-palette"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Color Grading</h4>
+                                <p class="course__desc">DaVinci Resolve, color theory in motion, grading workflows</p>
+                                <div class="course__tags">
+                                    <span class="tag">Video</span>
+                                </div>
+                            </div>
+
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-bullhorn"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Digital Marketing</h4>
+                                <p class="course__desc">SEO, SEM, Google Analytics, digital advertising strategies</p>
+                                <div class="course__tags">
+                                    <span class="tag">Media</span>
+                                </div>
+                            </div>
+
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-file-lines"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Content Strategy</h4>
+                                <p class="course__desc">Content planning, storytelling, audience analysis, content calendar</p>
+                                <div class="course__tags">
+                                    <span class="tag">Media</span>
+                                </div>
+                            </div>
+
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-project-diagram"></i>
+                                    <span class="course__credits">4 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Dự án Thực tế</h4>
+                                <p class="course__desc">Real client projects, team collaboration, professional workflow</p>
+                                <div class="course__tags">
+                                    <span class="tag">Media</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab Content - Năm 4 -->
+                    <div class="tab__content" id="year4" data-tab-content="year4" role="tabpanel" aria-hidden="true">
+                        <div class="curriculum__grid">
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-building"></i>
+                                    <span class="course__credits">8 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Thực tập Doanh nghiệp</h4>
+                                <p class="course__desc">Internship tại công ty, agency, hoặc studio chuyên nghiệp</p>
+                                <div class="course__tags">
+                                    <span class="tag">Media</span>
+                                </div>
+                            </div>
+
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span class="course__credits">10 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Khóa luận Tốt nghiệp</h4>
+                                <p class="course__desc">Capstone project, research, final portfolio presentation</p>
+                                <div class="course__tags">
+                                    <span class="tag">Media</span>
+                                </div>
+                            </div>
+
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-briefcase"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Portfolio Development</h4>
+                                <p class="course__desc">Xây dựng portfolio chuyên nghiệp, personal branding, job hunting</p>
+                                <div class="course__tags">
+                                    <span class="tag">Media</span>
+                                </div>
+                            </div>
+
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-users"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Quản lý Dự án</h4>
+                                <p class="course__desc">Project management, client communication, team leadership</p>
+                                <div class="course__tags">
+                                    <span class="tag">Media</span>
+                                </div>
+                            </div>
+
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <span class="course__credits">2 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Entrepreneurship</h4>
+                                <p class="course__desc">Khởi nghiệp, freelancing, business planning cho creative professionals</p>
+                                <div class="course__tags">
+                                    <span class="tag">Media</span>
+                                </div>
+                            </div>
+
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-globe"></i>
+                                    <span class="course__credits">2 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Xu hướng Công nghệ</h4>
+                                <p class="course__desc">AI in design, emerging technologies, future of multimedia</p>
+                                <div class="course__tags">
+                                    <span class="tag">Media</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section" style="background-color: var(--color-off-white);">
+            <div class="container" style="text-align: center;">
+                <div data-aos="zoom-in">
+                    <h2 style="margin-bottom: var(--space-md);">Sẵn sàng bắt đầu hành trình học tập?</h2>
+                    <p style="margin-bottom: var(--space-xl); color: var(--color-text-mid);">
+                        Đăng ký ngay để nhận tư vấn chi tiết về chương trình học
+                    </p>
+                    <a href="contact.html" class="btn btn--primary">
+                        <span>Liên hệ tư vấn</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <h3 class="footer__title">
+                        <i class="fas fa-graduation-cap"></i>
+                        Media Arts
+                    </h3>
+                    <p class="footer__description">
+                        Ngành Truyền thông Đa phương tiện - Nơi ý tưởng sáng tạo trở thành hiện thực.
+                    </p>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__heading">Liên kết</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="about.html">Giới thiệu</a></li>
+                        <li><a href="courses.html">Môn học</a></li>
+                        <li><a href="activities.html">Hoạt động</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__heading">Theo dõi</h4>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2026 Media Arts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- CDN Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

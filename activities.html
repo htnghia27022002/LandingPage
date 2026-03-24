@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hoạt động sinh viên, sự kiện, CLB và dự án nổi bật của ngành Truyền thông đa phương tiện">
+    <title>Hoạt động Sinh viên | Truyền thông Đa phương tiện</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+    
+    <!-- AOS, Swiper, GLightbox -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Media Arts</span>
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Trang chủ</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">Giới thiệu</a></li>
+                    <li class="nav__item"><a href="courses.html" class="nav__link">Môn học</a></li>
+                    <li class="nav__item"><a href="activities.html" class="nav__link active">Hoạt động</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Liên hệ</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Page Hero -->
+        <section class="page-hero" style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);">
+            <div class="container">
+                <div class="page-hero__content" data-aos="fade-up">
+                    <h1 class="page-hero__title" style="color: white;">Hoạt động Sinh viên</h1>
+                    <p class="page-hero__description" style="color: var(--color-off-white);">
+                        Khám phá các sự kiện, CLB và dự án nổi bật của sinh viên
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter Tabs -->
+        <section class="section" style="padding-top: var(--space-2xl);">
+            <div class="container">
+                <div class="filter-tabs" data-tabs-container data-aos="fade-up">
+                    <button class="tab__button active" data-tab="all">Tất cả</button>
+                    <button class="tab__button" data-tab="events">Sự kiện</button>
+                    <button class="tab__button" data-tab="projects">Dự án</button>
+                    <button class="tab__button" data-tab="clubs">CLB</button>
+                </div>
+
+                <!-- All Activities -->
+                <div class="tab__content active" id="all" data-tab-content="all">
+                    <div class="activities__grid" data-aos="fade-up" data-aos-delay="200">
+                        <article class="activity__card">
+                            <a href="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&q=80" class="glightbox">
+                                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=600&q=80" alt="Media Design Competition">
+                            </a>
+                            <div class="activity__content">
+                                <span class="activity__tag">Sự kiện</span>
+                                <h3>Media Design Competition 2026</h3>
+                                <p>Cuộc thi thiết kế đa phương tiện thường niên với hơn 200 sinh viên tham gia</p>
+                            </div>
+                        </article>
+
+                        <article class="activity__card">
+                            <a href="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=1200&q=80" class="glightbox">
+                                <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=600&q=80" alt="Graduate Exhibition">
+                            </a>
+                            <div class="activity__content">
+                                <span class="activity__tag">Sự kiện</span>
+                                <h3>Graduate Exhibition 2025</h3>
+                                <p>Triển lãm tốt nghiệp với các tác phẩm xuất sắc của sinh viên khóa 2021-2025</p>
+                            </div>
+                        </article>
+
+                        <article class="activity__card">
+                            <a href="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=80" class="glightbox">
+                                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80" alt="Animation Short Film">
+                            </a>
+                            <div class="activity__content">
+                                <span class="activity__tag">Dự án</span>
+                                <h3>Animation Short Film Project</h3>
+                                <p>Dự án phim hoạt hình ngắn đoạt giải Nhất tại Animation Festival 2025</p>
+                            </div>
+                        </article>
+
+                        <article class="activity__card">
+                            <a href="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=1200&q=80" class="glightbox">
+                                <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=600&q=80" alt="Film Screening">
+                            </a>
+                            <div class="activity__content">
+                                <span class="activity__tag">Sự kiện</span>
+                                <h3>Student Film Screening Night</h3>
+                                <p>Đêm chiếu phim ngắn do sinh viên sản xuất, thu hút hơn 300 khán giả</p>
+                            </div>
+                        </article>
+
+                        <article class="activity__card">
+                            <a href="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=1200&q=80" class="glightbox">
+                                <img src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=600&q=80" alt="Workshop">
+                            </a>
+                            <div class="activity__content">
+                                <span class="activity__tag">Sự kiện</span>
+                                <h3>Video Production Workshop</h3>
+                                <p>Workshop sản xuất video chuyên nghiệp do chuyên gia từ Hollywood hướng dẫn</p>
+                            </div>
+                        </article>
+
+                        <article class="activity__card">
+                            <a href="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1200&q=80" class="glightbox">
+                                <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=600&q=80" alt="3D Showcase">
+                            </a>
+                            <div class="activity__content">
+                                <span class="activity__tag">Dự án</span>
+                                <h3>3D Animation Showcase</h3>
+                                <p>Triển lãm các dự án 3D animation xuất sắc của sinh viên năm 3</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Events Only -->
+                <div class="tab__content" id="events" data-tab-content="events">
+                    <div class="activities__grid">
+                        <article class="activity__card">
+                            <a href="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&q=80" class="glightbox">
+                                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=600&q=80" alt="Media Design Competition">
+                            </a>
+                            <div class="activity__content">
+                                <span class="activity__tag">Sự kiện</span>
+                                <h3>Media Design Competition 2026</h3>
+                                <p>Cuộc thi thiết kế đa phương tiện thường niên với hơn 200 sinh viên tham gia</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Projects Only -->
+                <div class="tab__content" id="projects" data-tab-content="projects">
+                    <div class="activities__grid">
+                        <article class="activity__card">
+                            <a href="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=80" class="glightbox">
+                                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80" alt="Animation Short Film">
+                            </a>
+                            <div class="activity__content">
+                                <span class="activity__tag">Dự án</span>
+                                <h3>Animation Short Film Project</h3>
+                                <p>Dự án phim hoạt hình ngắn đoạt giải Nhất tại Animation Festival 2025</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Clubs Only -->
+                <div class="tab__content" id="clubs" data-tab-content="clubs">
+                    <div class="clubs__grid" data-aos="fade-up">
+                        <article class="club__card">
+                            <div class="club__icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h3>Design Club</h3>
+                            <p>CLB thiết kế đồ họa với hơn 80 thành viên, tổ chức workshop, competition hàng tháng</p>
+                            <div class="club__stats">
+                                <span><i class="fas fa-users"></i> 80+ thành viên</span>
+                            </div>
+                        </article>
+
+                        <article class="club__card">
+                            <div class="club__icon">
+                                <i class="fas fa-film"></i>
+                            </div>
+                            <h3>Film Club</h3>
+                            <p>CLB làm phim với các dự án phim ngắn, documentary và video production</p>
+                            <div class="club__stats">
+                                <span><i class="fas fa-users"></i> 60+ thành viên</span>
+                            </div>
+                        </article>
+
+                        <article class="club__card">
+                            <div class="club__icon">
+                                <i class="fas fa-share-nodes"></i>
+                            </div>
+                            <h3>Media Team</h3>
+                            <p>Đội truyền thông phụ trách content marketing cho các sự kiện của trường</p>
+                            <div class="club__stats">
+                                <span><i class="fas fa-users"></i> 40+ thành viên</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Events Slider -->
+        <section class="section" style="background-color: var(--color-off-white);">
+            <div class="container">
+                <div class="section__header" data-aos="fade-up">
+                    <span class="section__subtitle">Nổi bật</span>
+                    <h2 class="section__title">Sự kiện Sắp Diễn Ra</h2>
+                </div>
+
+                <div class="swiper events-swiper" data-aos="fade-up" data-aos-delay="200">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="event-slide__card">
+                                <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=800&q=80" alt="Design Week">
+                                <div class="event-slide__content">
+                                    <span class="event-slide__date">15-20 April 2026</span>
+                                    <h3>Design Week 2026</h3>
+                                    <p>Tuần lễ thiết kế với workshop, talk show và competition</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="event-slide__card">
+                                <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=800&q=80" alt="Animation Festival">
+                                <div class="event-slide__content">
+                                    <span class="event-slide__date">May 2026</span>
+                                    <h3>Animation Festival</h3>
+                                    <p>Liên hoan phim hoạt hình sinh viên toàn quốc</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="event-slide__card">
+                                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" alt="Career Fair">
+                                <div class="event-slide__content">
+                                    <span class="event-slide__date">June 2026</span>
+                                    <h3>Media Career Fair</h3>
+                                    <p>Ngày hội việc làm ngành truyền thông với 50+ doanh nghiệp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <h3 class="footer__title">
+                        <i class="fas fa-graduation-cap"></i>
+                        Media Arts
+                    </h3>
+                    <p class="footer__description">
+                        Ngành Truyền thông Đa phương tiện - Nơi ý tưởng sáng tạo trở thành hiện thực.
+                    </p>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__heading">Liên kết</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="about.html">Giới thiệu</a></li>
+                        <li><a href="courses.html">Môn học</a></li>
+                        <li><a href="activities.html">Hoạt động</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__heading">Theo dõi</h4>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2026 Media Arts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- CDN Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/animations.js"></script>
+    
+    <!-- Initialize GLightbox -->
+    <script>
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true
+        });
+    </script>
+</body>
+</html>

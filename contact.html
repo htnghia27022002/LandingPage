@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liên hệ tư vấn tuyển sinh và thông tin ngành Truyền thông đa phương tiện">
+    <title>Liên hệ | Truyền thông Đa phương tiện</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+    
+    <!-- AOS - Scroll Animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Media Arts</span>
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Trang chủ</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">Giới thiệu</a></li>
+                    <li class="nav__item"><a href="courses.html" class="nav__link">Môn học</a></li>
+                    <li class="nav__item"><a href="activities.html" class="nav__link">Hoạt động</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link active">Liên hệ</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Page Hero -->
+        <section class="page-hero" style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);">
+            <div class="container">
+                <div class="page-hero__content" data-aos="fade-up">
+                    <h1 class="page-hero__title" style="color: white;">Liên hệ với chúng tôi</h1>
+                    <p class="page-hero__description" style="color: var(--color-off-white);">
+                        Hãy để lại thông tin, chúng tôi sẽ liên hệ tư vấn ngay
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section">
+            <div class="container">
+                <div class="contact__grid">
+                    <!-- Contact Info -->
+                    <div class="contact__info" data-aos="fade-right">
+                        <h2>Thông tin liên hệ</h2>
+                        <p style="margin-bottom: var(--space-xl);">
+                            Chúng tôi luôn sẵn sàng hỗ trợ và giải đáp mọi thắc mắc của bạn về chương trình đào tạo.
+                        </p>
+
+                        <div class="info__item">
+                            <div class="info__icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info__content">
+                                <h4>Địa chỉ</h4>
+                                <p>Số 268 Lý Thường Kiệt, Phường 14, Quận 10, TP. Hồ Chí Minh</p>
+                            </div>
+                        </div>
+
+                        <div class="info__item">
+                            <div class="info__icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info__content">
+                                <h4>Điện thoại</h4>
+                                <p>(028) 3864 1122</p>
+                                <p>Hotline: 0909 123 456</p>
+                            </div>
+                        </div>
+
+                        <div class="info__item">
+                            <div class="info__icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info__content">
+                                <h4>Email</h4>
+                                <p>multimedia@university.edu.vn</p>
+                                <p>admissions@university.edu.vn</p>
+                            </div>
+                        </div>
+
+                        <div class="info__item">
+                            <div class="info__icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info__content">
+                                <h4>Giờ làm việc</h4>
+                                <p>Thứ 2 - Thứ 6: 8:00 - 17:00</p>
+                                <p>Thứ 7: 8:00 - 12:00</p>
+                                <p>Chủ Nhật: Nghỉ</p>
+                            </div>
+                        </div>
+
+                        <div class="social__links" style="margin-top: var(--space-xl);">
+                            <h4 style="margin-bottom: var(--space-md);">Theo dõi chúng tôi</h4>
+                            <div class="social__icons">
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact__form-wrapper" data-aos="fade-left">
+                        <form id="contact-form" class="contact__form" novalidate>
+                            <h3 style="margin-bottom: var(--space-lg);">Gửi tin nhắn</h3>
+
+                            <!-- Full Name Field -->
+                            <div class="form__group">
+                                <label for="fullname" class="form__label">
+                                    Họ và tên <span class="required">*</span>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="fullname" 
+                                    name="fullname" 
+                                    class="form__input" 
+                                    placeholder="Nhập họ và tên của bạn"
+                                    required
+                                    minlength="2"
+                                >
+                                <span class="form__error" id="fullname-error"></span>
+                            </div>
+
+                            <!-- Email Field -->
+                            <div class="form__group">
+                                <label for="email" class="form__label">
+                                    Email <span class="required">*</span>
+                                </label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    class="form__input" 
+                                    placeholder="example@email.com"
+                                    required
+                                >
+                                <span class="form__error" id="email-error"></span>
+                            </div>
+
+                            <!-- Phone Field -->
+                            <div class="form__group">
+                                <label for="phone" class="form__label">
+                                    Số điện thoại <span class="required">*</span>
+                                </label>
+                                <input 
+                                    type="tel" 
+                                    id="phone" 
+                                    name="phone" 
+                                    class="form__input" 
+                                    placeholder="0909123456"
+                                    required
+                                    pattern="[0-9]{10}"
+                                    maxlength="10"
+                                >
+                                <span class="form__error" id="phone-error"></span>
+                            </div>
+
+                            <!-- Subject Field -->
+                            <div class="form__group">
+                                <label for="subject" class="form__label">
+                                    Chủ đề <span class="required">*</span>
+                                </label>
+                                <select 
+                                    id="subject" 
+                                    name="subject" 
+                                    class="form__select"
+                                    required
+                                >
+                                    <option value="">-- Chọn chủ đề --</option>
+                                    <option value="admissions">Tư vấn tuyển sinh</option>
+                                    <option value="courses">Hỏi về môn học</option>
+                                    <option value="partnership">Hợp tác</option>
+                                    <option value="other">Khác</option>
+                                </select>
+                                <span class="form__error" id="subject-error"></span>
+                            </div>
+
+                            <!-- Message Field -->
+                            <div class="form__group">
+                                <label for="message" class="form__label">
+                                    Nội dung <span class="required">*</span>
+                                </label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    class="form__textarea" 
+                                    placeholder="Nhập nội dung tin nhắn của bạn (tối thiểu 20 ký tự)"
+                                    required
+                                    minlength="20"
+                                    rows="6"
+                                ></textarea>
+                                <span class="form__error" id="message-error"></span>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn--primary btn--full" id="submit-btn">
+                                <span>Gửi tin nhắn</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+
+                            <!-- Success Message -->
+                            <div class="form__success" id="success-message" style="display: none;">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi trong thời gian sớm nhất.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6306098103864!2d106.66370831533435!3d10.762622092329918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed23c80767d%3A0x88582a0b29e7d52d!2zMjY4IEzDvSBUaMaw4budbmcgS2nhu4d0LCBQaMaw4budbmcgMTQsIFF14bqtbiAxMCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1647856234567!5m2!1sen!2s" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"
+                title="Bản đồ địa chỉ trường">
+            </iframe>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <h3 class="footer__title">
+                        <i class="fas fa-graduation-cap"></i>
+                        Media Arts
+                    </h3>
+                    <p class="footer__description">
+                        Ngành Truyền thông Đa phương tiện - Nơi ý tưởng sáng tạo trở thành hiện thực.
+                    </p>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__heading">Liên kết</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="about.html">Giới thiệu</a></li>
+                        <li><a href="courses.html">Môn học</a></li>
+                        <li><a href="activities.html">Hoạt động</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__heading">Theo dõi</h4>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2026 Media Arts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- CDN Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

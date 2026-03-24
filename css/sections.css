@@ -3,7 +3,12 @@
   min-height: calc(100vh - var(--header-height));
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-image: 
+    linear-gradient(135deg, rgba(99, 102, 241, 0.85) 0%, rgba(118, 75, 162, 0.9) 100%),
+    url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   position: relative;
   overflow: hidden;
 }
@@ -15,8 +20,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
-  opacity: 0.5;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.05" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+  opacity: 0.3;
 }
 
 .hero__container {
@@ -35,11 +40,15 @@
 .hero__subtitle {
   display: inline-block;
   font-size: var(--fs-sm);
-  font-weight: var(--fw-semibold);
-  color: var(--color-primary);
+  font-weight: var(--fw-bold);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-full);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
   margin-bottom: var(--space-md);
+  backdrop-filter: blur(10px);
 }
 
 .hero__title {
@@ -47,13 +56,18 @@
   font-size: var(--fs-6xl);
   line-height: 1.1;
   margin-bottom: var(--space-lg);
+  color: #ffffff;
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  font-weight: var(--fw-bold);
 }
 
 .hero__description {
   font-size: var(--fs-lg);
-  color: var(--color-gray-600);
+  color: #ffffff;
   margin-bottom: var(--space-2xl);
   line-height: 1.8;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+  font-weight: var(--fw-medium);
 }
 
 .hero__buttons {
@@ -153,6 +167,7 @@
 /* ===== ABOUT SECTION ===== */
 .about {
   background: var(--color-white);
+  position: relative;
 }
 
 .about__container {
@@ -210,9 +225,10 @@
 
 .about__text {
   font-size: var(--fs-lg);
-  color: var(--color-gray-600);
-  line-height: 1.8;
+  color: var(--color-gray-800);
+  line-height: 1.9;
   margin-bottom: var(--space-xl);
+  font-weight: var(--fw-regular);
 }
 
 .about__list {
@@ -225,7 +241,8 @@
   gap: var(--space-md);
   margin-bottom: var(--space-md);
   font-size: var(--fs-base);
-  color: var(--color-gray-700);
+  color: var(--color-gray-800);
+  font-weight: var(--fw-medium);
 }
 
 .about__item i {
@@ -243,7 +260,13 @@
 
 /* ===== PROGRAMS SECTION ===== */
 .programs {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-image: 
+    linear-gradient(135deg, rgba(245, 247, 250, 0.97) 0%, rgba(195, 207, 226, 0.97) 100%),
+    url('https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
 }
 
 .programs__grid {
@@ -308,9 +331,10 @@
 }
 
 .program__description {
-  color: var(--color-gray-600);
+  color: var(--color-gray-800);
   line-height: 1.8;
   margin-bottom: var(--space-lg);
+  font-weight: var(--fw-regular);
 }
 
 .program__features {
@@ -322,8 +346,9 @@
   align-items: center;
   gap: var(--space-sm);
   margin-bottom: var(--space-sm);
-  color: var(--color-gray-700);
+  color: var(--color-gray-800);
   font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
 }
 
 .program__features i {
@@ -333,6 +358,7 @@
 /* ===== CURRICULUM SECTION ===== */
 .curriculum {
   background: var(--color-white);
+  position: relative;
 }
 
 .curriculum__container {
@@ -386,17 +412,25 @@
   font-size: var(--fs-lg);
   margin-bottom: var(--space-sm);
   color: var(--color-gray-900);
+  font-weight: var(--fw-bold);
 }
 
 .course__desc {
   font-size: var(--fs-sm);
-  color: var(--color-gray-600);
-  line-height: 1.6;
+  color: var(--color-gray-700);
+  line-height: 1.7;
+  font-weight: var(--fw-regular);
 }
 
 /* ===== ACTIVITIES SECTION ===== */
 .activities {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-image: 
+    linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 242, 245, 0.95) 100%),
+    url('https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
 }
 
 .activities__filters {
@@ -468,12 +502,16 @@
   color: var(--color-white);
   font-size: var(--fs-xl);
   margin-bottom: var(--space-sm);
+  font-weight: var(--fw-bold);
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .gallery__category {
-  color: var(--color-gray-300);
+  color: rgba(255, 255, 255, 0.95);
   font-size: var(--fs-sm);
   margin-bottom: var(--space-md);
+  font-weight: var(--fw-medium);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 .gallery__btn {
@@ -538,8 +576,8 @@
   text-align: center;
   margin-top: var(--space-lg);
   font-size: var(--fs-lg);
-  color: var(--color-gray-700);
-  font-weight: var(--fw-medium);
+  color: var(--color-gray-900);
+  font-weight: var(--fw-semibold);
 }
 
 .slider__btn {
@@ -598,6 +636,7 @@
 /* ===== CONTACT SECTION ===== */
 .contact {
   background: var(--color-white);
+  position: relative;
 }
 
 .contact__container {
@@ -638,13 +677,15 @@
 
 .info__title {
   font-size: var(--fs-base);
-  font-weight: var(--fw-semibold);
+  font-weight: var(--fw-bold);
   margin-bottom: var(--space-xs);
+  color: var(--color-white);
 }
 
 .info__text {
   font-size: var(--fs-sm);
-  opacity: 0.9;
+  opacity: 0.95;
+  font-weight: var(--fw-medium);
 }
 
 .social__links {

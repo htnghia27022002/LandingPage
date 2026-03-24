@@ -1,58 +1,78 @@
 /* ===== CSS VARIABLES ===== */
 :root {
-  /* Colors - Primary Palette */
-  --color-primary: #6366f1;
-  --color-primary-dark: #4f46e5;
-  --color-primary-light: #818cf8;
-  --color-secondary: #ec4899;
-  --color-accent: #f59e0b;
+  /* Colors - Primary Green Palette (matches requirements) */
+  --color-primary: #1A6B3C;
+  --color-primary-light: #2D9B5A;
+  --color-primary-dark: #0F4526;
+  --color-accent: #4ECB71;
+  --color-accent-soft: #A8E6BC;
   
-  /* Gradient */
-  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-  --gradient-accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  /* Background Colors */
+  --color-white: #FFFFFF;
+  --color-off-white: #F4FAF6;
+  --color-surface: #EAF5EE;
+  --color-border: #C3E6CF;
+  
+  /* Text Colors - Updated for better contrast */
+  --color-text-dark: #0D2B1A;
+  --color-text-mid: #1A3A26;
+  --color-text-light: #3A5F47;
   
   /* Neutral Colors */
-  --color-white: #ffffff;
-  --color-black: #0f172a;
-  --color-gray-100: #f1f5f9;
-  --color-gray-200: #e2e8f0;
-  --color-gray-300: #cbd5e1;
-  --color-gray-400: #94a3b8;
-  --color-gray-500: #64748b;
-  --color-gray-600: #475569;
-  --color-gray-700: #334155;
-  --color-gray-800: #1e293b;
-  --color-gray-900: #0f172a;
+  --color-black: #0D2B1A;
+  --color-gray-100: #F4FAF6;
+  --color-gray-200: #EAF5EE;
+  --color-gray-300: #C3E6CF;
+  --color-gray-400: #A8E6BC;
+  --color-gray-500: #7DAF8D;
+  --color-gray-600: #3A5F47;
+  --color-gray-700: #2D9B5A;
+  --color-gray-800: #1A6B3C;
+  --color-gray-900: #0D2B1A;
   
   /* Status Colors */
-  --color-success: #10b981;
+  --color-success: #4ECB71;
   --color-warning: #f59e0b;
   --color-error: #ef4444;
-  --color-info: #3b82f6;
+  --color-info: #1A6B3C;
   
-  /* Typography */
-  --font-primary: 'Poppins', sans-serif;
-  --font-display: 'Playfair Display', serif;
+  /* Gradient */
+  --gradient-primary: linear-gradient(135deg, #1A6B3C 0%, #4ECB71 100%);
+  --gradient-accent: linear-gradient(135deg, #2D9B5A 0%, #A8E6BC 100%);
   
-  /* Font Sizes */
-  --fs-xs: 0.75rem;      /* 12px */
-  --fs-sm: 0.875rem;     /* 14px */
-  --fs-base: 1rem;       /* 16px */
-  --fs-lg: 1.125rem;     /* 18px */
-  --fs-xl: 1.25rem;      /* 20px */
-  --fs-2xl: 1.5rem;      /* 24px */
-  --fs-3xl: 1.875rem;    /* 30px */
-  --fs-4xl: 2.25rem;     /* 36px */
-  --fs-5xl: 3rem;        /* 48px */
-  --fs-6xl: 3.75rem;     /* 60px */
+  /* Typography - Updated to match requirements */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-accent: 'Cormorant Garamond', serif;
+  
+  /* Font Sizes - Updated to match requirements */
+  --font-xs: 0.75rem;      /* 12px */
+  --font-sm: 0.875rem;     /* 14px */
+  --font-base: 1rem;       /* 16px */
+  --font-lg: 1.125rem;     /* 18px */
+  --font-xl: 1.375rem;     /* 22px */
+  --font-2xl: 1.75rem;     /* 28px */
+  --font-3xl: 2.25rem;     /* 36px */
+  --font-4xl: 3rem;        /* 48px */
+  --font-5xl: 4rem;        /* 64px */
+  
+  /* Legacy aliases for backward compatibility */
+  --fs-xs: var(--font-xs);
+  --fs-sm: var(--font-sm);
+  --fs-base: var(--font-base);
+  --fs-lg: var(--font-lg);
+  --fs-xl: var(--font-xl);
+  --fs-2xl: var(--font-2xl);
+  --fs-3xl: var(--font-3xl);
+  --fs-4xl: var(--font-4xl);
+  --fs-5xl: var(--font-5xl);
   
   /* Font Weights */
-  --fw-light: 300;
-  --fw-regular: 400;
-  --fw-medium: 500;
-  --fw-semibold: 600;
-  --fw-bold: 700;
+  --fw-light: 400;
+  --fw-regular: 500;
+  --fw-medium: 600;
+  --fw-semibold: 700;
+  --fw-bold: 800;
   
   /* Spacing */
   --space-xs: 0.25rem;   /* 4px */
@@ -104,17 +124,23 @@
 
 /* Dark Mode Variables */
 body.dark-mode {
-  --color-white: #0f172a;
-  --color-black: #f1f5f9;
-  --color-gray-100: #1e293b;
-  --color-gray-200: #334155;
-  --color-gray-300: #475569;
-  --color-gray-400: #64748b;
-  --color-gray-500: #94a3b8;
-  --color-gray-600: #cbd5e1;
-  --color-gray-700: #e2e8f0;
-  --color-gray-800: #f1f5f9;
-  --color-gray-900: #f8fafc;
+  --color-white: #0D2B1A;
+  --color-off-white: #0F4526;
+  --color-surface: #1A6B3C;
+  --color-black: #F4FAF6;
+  --color-text-dark: #F4FAF6;
+  --color-text-mid: #C3E6CF;
+  --color-text-light: #A8E6BC;
+  --color-border: #3A5F47;
+  --color-gray-100: #0F4526;
+  --color-gray-200: #1A6B3C;
+  --color-gray-300: #2D9B5A;
+  --color-gray-400: #3A5F47;
+  --color-gray-500: #7DAF8D;
+  --color-gray-600: #A8E6BC;
+  --color-gray-700: #C3E6CF;
+  --color-gray-800: #EAF5EE;
+  --color-gray-900: #F4FAF6;
 }
 
 /* Custom Scrollbar */
