@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ngành Truyền thông đa phương tiện - Thiết kế đồ họa, Dựng video, Animation, Media">
+    <title>Truyền thông Đa phương tiện | Trường Đại học</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Media Arts</span>
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#hero" class="nav__link">Trang chủ</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Giới thiệu</a></li>
+                    <li class="nav__item"><a href="#programs" class="nav__link">Chuyên ngành</a></li>
+                    <li class="nav__item"><a href="#curriculum" class="nav__link">Môn học</a></li>
+                    <li class="nav__item"><a href="#activities" class="nav__link">Hoạt động</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Liên hệ</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero section" id="hero">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <span class="hero__subtitle">Chào mừng bạn đến với</span>
+                    <h1 class="hero__title">
+                        Truyền thông <br>
+                        <span class="gradient-text">Đa phương tiện</span>
+                    </h1>
+                    <p class="hero__description">
+                        Khám phá thế giới sáng tạo không giới hạn với Thiết kế đồ họa, 
+                        Dựng video, Animation và Media. Nơi ý tưởng trở thành hiện thực.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#contact" class="btn btn--primary">
+                            <span>Đăng ký ngay</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#about" class="btn btn--outline">
+                            <span>Tìm hiểu thêm</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <div class="hero__image-wrapper">
+                        <div class="hero__image-card hero__card--1">
+                            <i class="fas fa-palette"></i>
+                            <span>Thiết kế</span>
+                        </div>
+                        <div class="hero__image-card hero__card--2">
+                            <i class="fas fa-video"></i>
+                            <span>Video</span>
+                        </div>
+                        <div class="hero__image-card hero__card--3">
+                            <i class="fas fa-film"></i>
+                            <span>Animation</span>
+                        </div>
+                        <div class="hero__image-card hero__card--4">
+                            <i class="fas fa-broadcast-tower"></i>
+                            <span>Media</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Về chúng tôi</span>
+                    <h2 class="section__title">Ngành Truyền thông Đa phương tiện</h2>
+                </div>
+
+                <div class="about__container">
+                    <div class="about__image">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800" alt="Students" loading="lazy">
+                        <div class="about__badge">
+                            <span class="badge__number">10+</span>
+                            <span class="badge__text">Năm kinh nghiệm</span>
+                        </div>
+                    </div>
+                    <div class="about__content">
+                        <p class="about__text">
+                            Ngành Truyền thông Đa phương tiện là sự kết hợp hoàn hảo giữa nghệ thuật 
+                            và công nghệ, trang bị cho sinh viên những kỹ năng thiết yếu trong kỷ 
+                            nguyên số. Chúng tôi đào tạo những nhà sáng tạo nội dung chuyên nghiệp, 
+                            có khả năng làm việc trong môi trường đa phương tiện hiện đại.
+                        </p>
+                        <ul class="about__list">
+                            <li class="about__item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Chương trình đào tạo chuẩn quốc tế</span>
+                            </li>
+                            <li class="about__item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Giảng viên giàu kinh nghiệm thực tế</span>
+                            </li>
+                            <li class="about__item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Trang thiết bị hiện đại, phòng lab chuyên dụng</span>
+                            </li>
+                            <li class="about__item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Cơ hội thực tập tại các công ty hàng đầu</span>
+                            </li>
+                        </ul>
+                        <div class="about__stats">
+                            <div class="stat__item">
+                                <h3 class="stat__number">500+</h3>
+                                <p class="stat__label">Sinh viên</p>
+                            </div>
+                            <div class="stat__item">
+                                <h3 class="stat__number">95%</h3>
+                                <p class="stat__label">Tỷ lệ có việc</p>
+                            </div>
+                            <div class="stat__item">
+                                <h3 class="stat__number">50+</h3>
+                                <p class="stat__label">Đối tác doanh nghiệp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section class="programs section" id="programs">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Chuyên ngành</span>
+                    <h2 class="section__title">Các chuyên ngành đào tạo</h2>
+                    <p class="section__description">
+                        Chọn con đường sáng tạo phù hợp với đam mê của bạn
+                    </p>
+                </div>
+
+                <div class="programs__grid">
+                    <article class="program__card">
+                        <div class="program__icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="program__title">Thiết kế Đồ họa</h3>
+                        <p class="program__description">
+                            Học cách tạo ra các thiết kế hình ảnh ấn tượng, từ logo, 
+                            poster đến UI/UX design cho web và mobile.
+                        </p>
+                        <ul class="program__features">
+                            <li><i class="fas fa-check"></i> Adobe Creative Suite</li>
+                            <li><i class="fas fa-check"></i> Brand Identity Design</li>
+                            <li><i class="fas fa-check"></i> UI/UX Design</li>
+                            <li><i class="fas fa-check"></i> Typography & Layout</li>
+                        </ul>
+                        <button class="btn btn--small" data-modal="design">
+                            Xem chi tiết
+                        </button>
+                    </article>
+
+                    <article class="program__card program__card--featured">
+                        <div class="program__badge">Phổ biến</div>
+                        <div class="program__icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3 class="program__title">Dựng Video</h3>
+                        <p class="program__description">
+                            Làm chủ các kỹ thuật dựng phim chuyên nghiệp, từ quay dựng 
+                            cơ bản đến color grading và visual effects.
+                        </p>
+                        <ul class="program__features">
+                            <li><i class="fas fa-check"></i> Adobe Premiere Pro</li>
+                            <li><i class="fas fa-check"></i> DaVinci Resolve</li>
+                            <li><i class="fas fa-check"></i> Color Grading</li>
+                            <li><i class="fas fa-check"></i> Motion Graphics</li>
+                        </ul>
+                        <button class="btn btn--small btn--primary" data-modal="video">
+                            Xem chi tiết
+                        </button>
+                    </article>
+
+                    <article class="program__card">
+                        <div class="program__icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h3 class="program__title">Animation</h3>
+                        <p class="program__description">
+                            Tạo ra các hoạt họa 2D/3D sống động, từ motion graphics 
+                            đến character animation chuyên nghiệp.
+                        </p>
+                        <ul class="program__features">
+                            <li><i class="fas fa-check"></i> After Effects</li>
+                            <li><i class="fas fa-check"></i> Blender 3D</li>
+                            <li><i class="fas fa-check"></i> Character Animation</li>
+                            <li><i class="fas fa-check"></i> Motion Design</li>
+                        </ul>
+                        <button class="btn btn--small" data-modal="animation">
+                            Xem chi tiết
+                        </button>
+                    </article>
+
+                    <article class="program__card">
+                        <div class="program__icon">
+                            <i class="fas fa-broadcast-tower"></i>
+                        </div>
+                        <h3 class="program__title">Media & Digital Marketing</h3>
+                        <p class="program__description">
+                            Chiến lược nội dung đa phương tiện, quản lý social media 
+                            và digital marketing hiệu quả.
+                        </p>
+                        <ul class="program__features">
+                            <li><i class="fas fa-check"></i> Content Strategy</li>
+                            <li><i class="fas fa-check"></i> Social Media Marketing</li>
+                            <li><i class="fas fa-check"></i> Analytics & SEO</li>
+                            <li><i class="fas fa-check"></i> Digital Advertising</li>
+                        </ul>
+                        <button class="btn btn--small" data-modal="media">
+                            Xem chi tiết
+                        </button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Curriculum Section -->
+        <section class="curriculum section" id="curriculum">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Chương trình đào tạo</span>
+                    <h2 class="section__title">Môn học theo từng năm</h2>
+                </div>
+
+                <div class="curriculum__container">
+                    <div class="tabs">
+                        <button class="tab__button active" data-tab="year1">Năm 1</button>
+                        <button class="tab__button" data-tab="year2">Năm 2</button>
+                        <button class="tab__button" data-tab="year3">Năm 3</button>
+                        <button class="tab__button" data-tab="year4">Năm 4</button>
+                    </div>
+
+                    <div class="tab__content active" id="year1">
+                        <div class="curriculum__grid">
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-pencil-ruler"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Nguyên lý Thiết kế cơ bản</h4>
+                                <p class="course__desc">Học các nguyên tắc thiết kế, màu sắc, typography</p>
+                            </div>
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-camera"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Nhiếp ảnh cơ bản</h4>
+                                <p class="course__desc">Kỹ thuật chụp ảnh, ánh sáng, composition</p>
+                            </div>
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-paint-brush"></i>
+                                    <span class="course__credits">4 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Vẽ kỹ thuật số</h4>
+                                <p class="course__desc">Digital illustration, sketching, concept art</p>
+                            </div>
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-code"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">HTML & CSS</h4>
+                                <p class="course__desc">Thiết kế web cơ bản, responsive design</p>
+                            </div>
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-book"></i>
+                                    <span class="course__credits">2 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Lịch sử Nghệ thuật</h4>
+                                <p class="course__desc">Phát triển của nghệ thuật và thiết kế</p>
+                            </div>
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Tư duy Sáng tạo</h4>
+                                <p class="course__desc">Phát triển ý tưởng và giải quyết vấn đề</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab__content" id="year2">
+                        <div class="curriculum__grid">
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fab fa-adobe"></i>
+                                    <span class="course__credits">4 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Adobe Photoshop</h4>
+                                <p class="course__desc">Photo editing, retouching, digital compositing</p>
+                            </div>
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-bezier-curve"></i>
+                                    <span class="course__credits">4 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Adobe Illustrator</h4>
+                                <p class="course__desc">Vector graphics, logo design, illustration</p>
+                            </div>
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-video"></i>
+                                    <span class="course__credits">4 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Dựng Video cơ bản</h4>
+                                <p class="course__desc">Premiere Pro, Final Cut, editing techniques</p>
+                            </div>
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-play-circle"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Motion Graphics</h4>
+                                <p class="course__desc">After Effects cơ bản, animation 2D</p>
+                            </div>
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">UI/UX Design</h4>
+                                <p class="course__desc">User interface, user experience, prototyping</p>
+                            </div>
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-bullhorn"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Marketing căn bản</h4>
+                                <p class="course__desc">Brand strategy, consumer behavior</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab__content" id="year3">
+                        <div class="curriculum__grid">
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-cube"></i>
+                                    <span class="course__credits">4 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">3D Modeling</h4>
+                                <p class="course__desc">Blender, Maya, 3D design fundamentals</p>
+                            </div>
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-running"></i>
+                                    <span class="course__credits">4 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Character Animation</h4>
+                                <p class="course__desc">Rigging, character movement, storytelling</p>
+                            </div>
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-adjust"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Color Grading</h4>
+                                <p class="course__desc">DaVinci Resolve, color theory, grading</p>
+                            </div>
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-magic"></i>
+                                    <span class="course__credits">4 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Visual Effects</h4>
+                                <p class="course__desc">VFX compositing, green screen, CGI</p>
+                            </div>
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-share-alt"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Social Media Marketing</h4>
+                                <p class="course__desc">Content creation, analytics, campaigns</p>
+                            </div>
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-briefcase"></i>
+                                    <span class="course__credits">4 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Portfolio Development</h4>
+                                <p class="course__desc">Build professional portfolio, branding</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab__content" id="year4">
+                        <div class="curriculum__grid">
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-project-diagram"></i>
+                                    <span class="course__credits">6 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Capstone Project</h4>
+                                <p class="course__desc">Dự án tốt nghiệp hoàn chỉnh</p>
+                            </div>
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-handshake"></i>
+                                    <span class="course__credits">6 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Thực tập Doanh nghiệp</h4>
+                                <p class="course__desc">Internship tại công ty đối tác</p>
+                            </div>
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-tools"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Chuyên đề nâng cao</h4>
+                                <p class="course__desc">AR/VR, AI in design, emerging tech</p>
+                            </div>
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-users"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Team Collaboration</h4>
+                                <p class="course__desc">Làm việc nhóm, quản lý dự án</p>
+                            </div>
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Business for Creatives</h4>
+                                <p class="course__desc">Freelancing, client management, pricing</p>
+                            </div>
+                            <div class="course__card">
+                                <div class="course__header">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span class="course__credits">3 tín chỉ</span>
+                                </div>
+                                <h4 class="course__name">Thesis & Defense</h4>
+                                <p class="course__desc">Luận văn và bảo vệ tốt nghiệp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities Section -->
+        <section class="activities section" id="activities">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Cuộc sống sinh viên</span>
+                    <h2 class="section__title">Hoạt động & Sự kiện</h2>
+                    <p class="section__description">
+                        Khám phá môi trường học tập năng động và sáng tạo
+                    </p>
+                </div>
+
+                <!-- Filter Buttons -->
+                <div class="activities__filters">
+                    <button class="filter__btn active" data-filter="all">Tất cả</button>
+                    <button class="filter__btn" data-filter="workshop">Workshop</button>
+                    <button class="filter__btn" data-filter="competition">Cuộc thi</button>
+                    <button class="filter__btn" data-filter="event">Sự kiện</button>
+                    <button class="filter__btn" data-filter="project">Dự án</button>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="activities__gallery">
+                    <article class="gallery__item" data-category="workshop">
+                        <div class="gallery__image">
+                            <img src="https://images.unsplash.com/photo-1542744094-3a31f272c490?w=600" alt="Design Workshop" loading="lazy">
+                            <div class="gallery__overlay">
+                                <h3 class="gallery__title">Design Thinking Workshop</h3>
+                                <p class="gallery__category">Workshop</p>
+                                <button class="gallery__btn" data-image="1">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gallery__item" data-category="competition">
+                        <div class="gallery__image">
+                            <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600" alt="Design Competition" loading="lazy">
+                            <div class="gallery__overlay">
+                                <h3 class="gallery__title">Graphic Design Competition</h3>
+                                <p class="gallery__category">Cuộc thi</p>
+                                <button class="gallery__btn" data-image="2">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gallery__item" data-category="event">
+                        <div class="gallery__image">
+                            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600" alt="Film Screening" loading="lazy">
+                            <div class="gallery__overlay">
+                                <h3 class="gallery__title">Student Film Screening</h3>
+                                <p class="gallery__category">Sự kiện</p>
+                                <button class="gallery__btn" data-image="3">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gallery__item" data-category="project">
+                        <div class="gallery__image">
+                            <img src="https://images.unsplash.com/photo-1558403194-611308249627?w=600" alt="Animation Project" loading="lazy">
+                            <div class="gallery__overlay">
+                                <h3 class="gallery__title">3D Animation Showcase</h3>
+                                <p class="gallery__category">Dự án</p>
+                                <button class="gallery__btn" data-image="4">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gallery__item" data-category="workshop">
+                        <div class="gallery__image">
+                            <img src="https://images.unsplash.com/photo-1560439514-4e9645039924?w=600" alt="Video Workshop" loading="lazy">
+                            <div class="gallery__overlay">
+                                <h3 class="gallery__title">Video Production Workshop</h3>
+                                <p class="gallery__category">Workshop</p>
+                                <button class="gallery__btn" data-image="5">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gallery__item" data-category="event">
+                        <div class="gallery__image">
+                            <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600" alt="Graduate Show" loading="lazy">
+                            <div class="gallery__overlay">
+                                <h3 class="gallery__title">Graduate Exhibition</h3>
+                                <p class="gallery__category">Sự kiện</p>
+                                <button class="gallery__btn" data-image="6">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Image Slider -->
+                <div class="slider__container">
+                    <h3 class="slider__title">Khoảnh khắc đáng nhớ</h3>
+                    <div class="slider">
+                        <button class="slider__btn slider__btn--prev" id="slider-prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="slider__track">
+                            <div class="slider__slide">
+                                <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800" alt="Slide 1">
+                                <p class="slider__caption">Triển lãm thiết kế cuối năm</p>
+                            </div>
+                            <div class="slider__slide">
+                                <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800" alt="Slide 2">
+                                <p class="slider__caption">Workshop với chuyên gia</p>
+                            </div>
+                            <div class="slider__slide">
+                                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800" alt="Slide 3">
+                                <p class="slider__caption">Hoạt động nhóm sáng tạo</p>
+                            </div>
+                        </div>
+                        <button class="slider__btn slider__btn--next" id="slider-next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="slider__dots" id="slider-dots"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Liên hệ</span>
+                    <h2 class="section__title">Đăng ký tư vấn</h2>
+                    <p class="section__description">
+                        Để lại thông tin, chúng tôi sẽ liên hệ tư vấn chi tiết
+                    </p>
+                </div>
+
+                <div class="contact__container">
+                    <div class="contact__info">
+                        <div class="info__item">
+                            <div class="info__icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info__content">
+                                <h4 class="info__title">Địa chỉ</h4>
+                                <p class="info__text">123 Đường ABC, Quận 1, TP.HCM</p>
+                            </div>
+                        </div>
+                        <div class="info__item">
+                            <div class="info__icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info__content">
+                                <h4 class="info__title">Điện thoại</h4>
+                                <p class="info__text">+84 123 456 789</p>
+                            </div>
+                        </div>
+                        <div class="info__item">
+                            <div class="info__icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info__content">
+                                <h4 class="info__title">Email</h4>
+                                <p class="info__text">contact@mediaarts.edu.vn</p>
+                            </div>
+                        </div>
+                        <div class="info__item">
+                            <div class="info__icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info__content">
+                                <h4 class="info__title">Giờ làm việc</h4>
+                                <p class="info__text">Thứ 2 - Thứ 6: 8:00 - 17:00</p>
+                            </div>
+                        </div>
+
+                        <div class="social__links">
+                            <a href="#" class="social__link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social__link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social__link" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social__link" aria-label="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="contact__form" id="contact-form">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Họ và tên <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" class="form__input" placeholder="Nguyễn Văn A" required>
+                            <span class="form__error" id="name-error"></span>
+                        </div>
+
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label for="email" class="form__label">Email <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" class="form__input" placeholder="example@email.com" required>
+                                <span class="form__error" id="email-error"></span>
+                            </div>
+                            <div class="form__group">
+                                <label for="phone" class="form__label">Số điện thoại <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" class="form__input" placeholder="0912345678" required>
+                                <span class="form__error" id="phone-error"></span>
+                            </div>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="program" class="form__label">Chuyên ngành quan tâm</label>
+                            <select id="program" name="program" class="form__select">
+                                <option value="">-- Chọn chuyên ngành --</option>
+                                <option value="design">Thiết kế Đồ họa</option>
+                                <option value="video">Dựng Video</option>
+                                <option value="animation">Animation</option>
+                                <option value="media">Media & Digital Marketing</option>
+                            </select>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="message" class="form__label">Lời nhắn</label>
+                            <textarea id="message" name="message" class="form__textarea" rows="4" placeholder="Nhập câu hỏi hoặc nội dung cần tư vấn..."></textarea>
+                        </div>
+
+                        <div class="form__actions">
+                            <button type="submit" class="btn btn--primary btn--full">
+                                <span>Gửi đăng ký</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                            <button type="reset" class="btn btn--outline">
+                                <span>Xóa form</span>
+                            </button>
+                        </div>
+
+                        <div class="form__message" id="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__column">
+                    <a href="#" class="footer__logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Media Arts</span>
+                    </a>
+                    <p class="footer__description">
+                        Ngành Truyền thông Đa phương tiện - Nơi đam mê sáng tạo 
+                        được thắp sáng và phát triển.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__column">
+                    <h3 class="footer__title">Liên kết</h3>
+                    <ul class="footer__links">
+                        <li><a href="#about">Giới thiệu</a></li>
+                        <li><a href="#programs">Chuyên ngành</a></li>
+                        <li><a href="#curriculum">Môn học</a></li>
+                        <li><a href="#activities">Hoạt động</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h3 class="footer__title">Hỗ trợ</h3>
+                    <ul class="footer__links">
+                        <li><a href="#contact">Liên hệ</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#admission">Tuyển sinh</a></li>
+                        <li><a href="#scholarship">Học bổng</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h3 class="footer__title">Đăng ký nhận tin</h3>
+                    <p class="footer__newsletter-text">Cập nhật tin tức và sự kiện mới nhất</p>
+                    <form class="footer__newsletter">
+                        <input type="email" placeholder="Email của bạn" class="newsletter__input">
+                        <button type="submit" class="newsletter__btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2026 Media Arts. Thiết kế bởi sinh viên Truyền thông Đa phương tiện.
+                </p>
+                <div class="footer__links-bottom">
+                    <a href="#privacy">Chính sách bảo mật</a>
+                    <a href="#terms">Điều khoản sử dụng</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Gallery Images -->
+    <div class="modal" id="image-modal">
+        <button class="modal__close" id="modal-close">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="modal__content">
+            <img src="" alt="Gallery Image" class="modal__image" id="modal-image">
+            <div class="modal__caption" id="modal-caption"></div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
