@@ -46,15 +46,6 @@
                     <i class="fas fa-times"></i>
                 </div>
             </div>
-            
-            <div class="nav__actions">
-                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </div>
         </nav>
     </header>
 
@@ -222,7 +213,6 @@
 
                 <div class="roadmap__timeline" data-aos="fade-up" data-aos-delay="200">
                     <div class="timeline__item">
-                        <div class="timeline__marker">1</div>
                         <div class="timeline__content">
                             <h3>Năm 1: Nền Tảng Cơ Bản</h3>
                             <p>Nguyên lý thiết kế, Nhiếp ảnh, Vẽ kỹ thuật số, Lý thuyết màu sắc, Typography</p>
@@ -230,7 +220,6 @@
                     </div>
 
                     <div class="timeline__item">
-                        <div class="timeline__marker">2</div>
                         <div class="timeline__content">
                             <h3>Năm 2: Kỹ Năng Chuyên Sâu</h3>
                             <p>Thiết kế đồ họa nâng cao, Dựng video, Motion Graphics, UI/UX Design</p>
@@ -238,7 +227,6 @@
                     </div>
 
                     <div class="timeline__item">
-                        <div class="timeline__marker">3</div>
                         <div class="timeline__content">
                             <h3>Năm 3: Chuyên Môn Hóa</h3>
                             <p>3D Animation, Visual Effects, Digital Marketing, Content Strategy, Dự án thực tế</p>
@@ -246,7 +234,6 @@
                     </div>
 
                     <div class="timeline__item">
-                        <div class="timeline__marker">4</div>
                         <div class="timeline__content">
                             <h3>Năm 4: Thực Tập & Tốt Nghiệp</h3>
                             <p>Thực tập tại doanh nghiệp, Khóa luận tốt nghiệp, Portfolio chuyên nghiệp</p>
@@ -260,41 +247,64 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer__grid">
+            <div class="footer__container">
                 <div class="footer__column">
-                    <h3 class="footer__title">
+                    <a href="index.html" class="footer__logo">
                         <i class="fas fa-graduation-cap"></i>
-                        Media Arts
-                    </h3>
+                        <span>Media Arts</span>
+                    </a>
                     <p class="footer__description">
-                        Ngành Truyền thông Đa phương tiện - Nơi ý tưởng sáng tạo trở thành hiện thực.
+                        Ngành Truyền thông Đa phương tiện - Nơi đam mê sáng tạo 
+                        được thắp sáng và phát triển.
                     </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
                 </div>
 
                 <div class="footer__column">
-                    <h4 class="footer__heading">Liên kết</h4>
+                    <h3 class="footer__title">Liên kết</h3>
                     <ul class="footer__links">
                         <li><a href="index.html">Trang chủ</a></li>
                         <li><a href="about.html">Giới thiệu</a></li>
                         <li><a href="courses.html">Môn học</a></li>
                         <li><a href="activities.html">Hoạt động</a></li>
-                        <li><a href="contact.html">Liên hệ</a></li>
                     </ul>
                 </div>
 
                 <div class="footer__column">
-                    <h4 class="footer__heading">Theo dõi</h4>
-                    <div class="footer__social">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    </div>
+                    <h3 class="footer__title">Hỗ trợ</h3>
+                    <ul class="footer__links">
+                        <li><a href="contact.html">Liên hệ</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#admission">Tuyển sinh</a></li>
+                        <li><a href="#scholarship">Học bổng</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h3 class="footer__title">Đăng ký nhận tin</h3>
+                    <p class="footer__newsletter-text">Cập nhật tin tức và sự kiện mới nhất</p>
+                    <form class="footer__newsletter">
+                        <input type="email" placeholder="Email của bạn" class="newsletter__input">
+                        <button type="submit" class="newsletter__btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
 
             <div class="footer__bottom">
-                <p>&copy; 2026 Media Arts. All rights reserved.</p>
+                <p class="footer__copyright">
+                    &copy; 2026 Media Arts. Thiết kế bởi sinh viên Truyền thông Đa phương tiện.
+                </p>
+                <div class="footer__links-bottom">
+                    <a href="#privacy">Chính sách bảo mật</a>
+                    <a href="#terms">Điều khoản sử dụng</a>
+                </div>
             </div>
         </div>
     </footer>
@@ -310,7 +320,6 @@
     <!-- JavaScript Files -->
     <script src="js/main.js"></script>
     <script src="js/navbar.js"></script>
-    <script src="js/darkmode.js"></script>
     <script src="js/animations.js"></script>
 </body>
 </html>

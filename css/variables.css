@@ -19,7 +19,7 @@
   --color-text-light: #3A5F47;
   
   /* Neutral Colors */
-  --color-black: #0D2B1A;
+  --color-black: #8d9aa7;
   --color-gray-100: #F4FAF6;
   --color-gray-200: #EAF5EE;
   --color-gray-300: #C3E6CF;
@@ -122,12 +122,12 @@
   --header-height: 4.5rem;
 }
 
-/* Dark Mode Variables */
-body.dark-mode {
+/* Dark Mode Variables - DISABLED */
+/* body.dark-mode {
   --color-white: #0D2B1A;
   --color-off-white: #0F4526;
   --color-surface: #1A6B3C;
-  --color-black: #F4FAF6;
+  --color-black: #8d9aa7;
   --color-text-dark: #F4FAF6;
   --color-text-mid: #C3E6CF;
   --color-text-light: #A8E6BC;
@@ -141,7 +141,7 @@ body.dark-mode {
   --color-gray-700: #C3E6CF;
   --color-gray-800: #EAF5EE;
   --color-gray-900: #F4FAF6;
-}
+} */
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {

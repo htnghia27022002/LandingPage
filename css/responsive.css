@@ -47,6 +47,11 @@
     grid-template-columns: 1fr;
   }
 
+  /* Activities */
+  .activities__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   /* Footer */
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
@@ -131,6 +136,19 @@
   .hero {
     min-height: auto;
     padding: var(--space-3xl) 0;
+  }
+
+  .page-hero {
+    min-height: 250px;
+    padding: var(--space-3xl) 0;
+  }
+
+  .page-hero__title {
+    font-size: var(--fs-3xl);
+  }
+
+  .page-hero__description {
+    font-size: var(--fs-base);
   }
 
   .hero__container {
@@ -249,6 +267,14 @@
   }
 
   /* ===== ACTIVITIES ===== */
+  .activities__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .activity__card img {
+    height: 200px;
+  }
+
   .activities__filters {
     gap: var(--space-sm);
   }
@@ -293,14 +319,44 @@
     right: 0.5rem;
   }
 
+  /* ===== ABOUT PAGE ===== */
+  .vision-mission__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .specializations__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+
+  .teachers__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+  }
+
+  .roadmap__timeline {
+    padding: 0 var(--space-md);
+  }
+
+  .timeline__item {
+    padding-left: var(--space-2xl);
+    padding-bottom: var(--space-2xl);
+  }
+
   /* ===== CONTACT ===== */
-  .contact__container {
+  .contact__grid {
     grid-template-columns: 1fr;
     gap: var(--space-2xl);
   }
 
   .contact__info {
     padding: var(--space-2xl);
+    order: 2;
+  }
+
+  .contact__form-wrapper {
+    order: 1;
   }
 
   .info__item {
@@ -435,6 +491,20 @@
     height: 250px;
   }
 
+  /* About Page - Small Mobile */
+  .specializations__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .teachers__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline__item {
+    padding-left: var(--space-xl);
+  }
+
+  /* Contact */
   .contact__info {
     padding: var(--space-xl);
   }
@@ -516,7 +586,7 @@
 @media (prefers-color-scheme: dark) {
   body:not(.light-mode) {
     --color-white: #0f172a;
-    --color-black: #f1f5f9;
+    --color-black: #8d9aa7;
     --color-gray-100: #1e293b;
     --color-gray-200: #334155;
     --color-gray-800: #f1f5f9;

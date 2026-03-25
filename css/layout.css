@@ -244,7 +244,8 @@ button {
   gap: var(--space-md);
 }
 
-.theme-toggle {
+/* Dark Mode Toggle - DISABLED */
+/* .theme-toggle {
   width: 40px;
   height: 40px;
   border-radius: var(--radius-md);
@@ -258,7 +259,7 @@ button {
 .theme-toggle:hover {
   background-color: var(--color-gray-100);
   color: var(--color-primary);
-}
+} */
 
 .nav__toggle,
 .nav__close {

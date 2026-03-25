@@ -1,8 +1,14 @@
-// ===== DARK MODE MODULE =====
-// Toggle dark/light mode, save to localStorage
+// ===== DARK MODE MODULE - DISABLED =====
+// Dark mode has been disabled. Website now uses light mode only.
 
 document.addEventListener('DOMContentLoaded', function() {
-  initDarkMode();
+  // Remove dark mode from body if it exists
+  document.body.classList.remove('dark-mode');
+  
+  // Clear localStorage theme preference
+  localStorage.removeItem('theme');
+  
+  console.log('Dark mode disabled. Light mode only.');
 });
 
 // ===== DARK MODE FUNCTIONALITY =====
