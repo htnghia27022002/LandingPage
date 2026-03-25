@@ -4,44 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ngành Truyền thông đa phương tiện - Thiết kế đồ họa, Dựng video, Animation, Media">
-    <title>Truyền thông Đa phương tiện | Trường Đại học</title>
-    
-    <!-- CSS Files -->
+    <title>Truyền thông Đa phương tiện | Trang chủ</title>
+
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- Google Fonts - Per Requirements -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
-    
-    <!-- AOS - Scroll Animations -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    
-    <!-- Swiper - Carousel/Slider -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    
-    <!-- GLightbox - Image Lightbox -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header & Navigation -->
+
+    <!-- ===== HEADER ===== -->
     <header class="header" id="header">
         <nav class="nav container">
             <a href="index.html" class="nav__logo">
                 <i class="fas fa-graduation-cap"></i>
                 <span>Media Arts</span>
             </a>
-            
+
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link active">Trang chủ</a></li>
-                    <li class="nav__item"><a href="about.html" class="nav__link">Giới thiệu</a></li>
-                    <li class="nav__item"><a href="courses.html" class="nav__link">Môn học</a></li>
-                    <li class="nav__item"><a href="activities.html" class="nav__link">Hoạt động</a></li>
-                    <li class="nav__item"><a href="contact.html" class="nav__link">Liên hệ</a></li>
+                    <li><a href="index.html" class="nav__link active">Trang chủ</a></li>
+                    <li><a href="about.html" class="nav__link">Giới thiệu</a></li>
+                    <li><a href="courses.html" class="nav__link">Môn học</a></li>
+                    <li><a href="activities.html" class="nav__link">Hoạt động</a></li>
+                    <li><a href="contact.html" class="nav__link">Liên hệ</a></li>
                 </ul>
                 <div class="nav__close" id="nav-close">
                     <i class="fas fa-times"></i>
@@ -54,10 +41,11 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
+    <!-- ===== NỘI DUNG CHÍNH ===== -->
     <main class="main">
-        <!-- Hero Section -->
-        <section class="hero section" id="hero">
+
+        <!-- HERO: Banner giới thiệu ngành -->
+        <section class="hero" id="hero">
             <div class="hero__container container">
                 <div class="hero__content">
                     <span class="hero__subtitle">Chào mừng bạn đến với</span>
@@ -66,34 +54,34 @@
                         <span class="gradient-text">Đa phương tiện</span>
                     </h1>
                     <p class="hero__description">
-                        Khám phá thế giới sáng tạo không giới hạn với Thiết kế đồ họa, 
+                        Khám phá thế giới sáng tạo không giới hạn với Thiết kế đồ họa,
                         Dựng video, Animation và Media. Nơi ý tưởng trở thành hiện thực.
                     </p>
                     <div class="hero__buttons">
-                        <a href="#contact" class="btn btn--primary">
+                        <a href="contact.html" class="btn btn--outline btn--outline-white">
                             <span>Đăng ký ngay</span>
                             <i class="fas fa-arrow-right"></i>
                         </a>
-                        <a href="#about" class="btn btn--outline">
+                        <a href="about.html" class="btn btn--outline btn--outline-white">
                             <span>Tìm hiểu thêm</span>
                         </a>
                     </div>
                 </div>
                 <div class="hero__image">
                     <div class="hero__image-wrapper">
-                        <div class="hero__image-card hero__card--1">
+                        <div class="hero__image-card">
                             <i class="fas fa-palette"></i>
                             <span>Thiết kế</span>
                         </div>
-                        <div class="hero__image-card hero__card--2">
+                        <div class="hero__image-card">
                             <i class="fas fa-video"></i>
                             <span>Video</span>
                         </div>
-                        <div class="hero__image-card hero__card--3">
+                        <div class="hero__image-card">
                             <i class="fas fa-film"></i>
                             <span>Animation</span>
                         </div>
-                        <div class="hero__image-card hero__card--4">
+                        <div class="hero__image-card">
                             <i class="fas fa-broadcast-tower"></i>
                             <span>Media</span>
                         </div>
@@ -102,40 +90,13 @@
             </div>
         </section>
 
-        <!-- About Section -->
-        <section class="about section" id="about">
-            <div class="container">
-                <div class="section__header">
-                    <span class="section__subtitle">Về chúng tôi</span>
-                    <h2 class="section__title">Ngành Truyền thông Đa phương tiện</h2>
-                </div>
-
-                <div class="about__container">
-                    <div class="about__content" style="max-width: 900px; margin: 0 auto; text-align: center;">
-                        <p class="about__text" style="font-size: var(--font-lg); margin-bottom: var(--space-xl);">
-                            Ngành Truyền thông Đa phương tiện là sự kết hợp hoàn hảo giữa nghệ thuật 
-                            và công nghệ, trang bị cho sinh viên những kỹ năng thiết yếu trong kỷ 
-                            nguyên số. Chúng tôi đào tạo những nhà sáng tạo nội dung chuyên nghiệp, 
-                            có khả năng làm việc trong môi trường đa phương tiện hiện đại.
-                        </p>
-                        <a href="about.html" class="btn btn--outline">
-                            <span>Tìm hiểu thêm về ngành</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Programs Section -->
-        <section class="programs section" id="programs">
+        <!-- PROGRAMS: 4 chuyên ngành -->
+        <section class="section" id="programs">
             <div class="container">
                 <div class="section__header">
                     <span class="section__subtitle">Chuyên ngành</span>
                     <h2 class="section__title">Các chuyên ngành đào tạo</h2>
-                    <p class="section__description">
-                        Chọn con đường sáng tạo phù hợp với đam mê của bạn
-                    </p>
+                    <p class="section__description">Chọn con đường sáng tạo phù hợp với đam mê của bạn</p>
                 </div>
 
                 <div class="programs__grid">
@@ -145,8 +106,7 @@
                         </div>
                         <h3 class="program__title">Thiết kế Đồ họa</h3>
                         <p class="program__description">
-                            Học cách tạo ra các thiết kế hình ảnh ấn tượng, từ logo, 
-                            poster đến UI/UX design cho web và mobile.
+                            Học cách tạo thiết kế hình ảnh ấn tượng, từ logo, poster đến UI/UX.
                         </p>
                         <ul class="program__features">
                             <li><i class="fas fa-check"></i> Adobe Creative Suite</li>
@@ -154,9 +114,7 @@
                             <li><i class="fas fa-check"></i> UI/UX Design</li>
                             <li><i class="fas fa-check"></i> Typography & Layout</li>
                         </ul>
-                        <button class="btn btn--small btn--primary" data-modal="design">
-                            Xem chi tiết
-                        </button>
+                        <a href="courses.html" class="btn btn--small btn--primary">Xem môn học</a>
                     </article>
 
                     <article class="program__card program__card--featured">
@@ -166,8 +124,7 @@
                         </div>
                         <h3 class="program__title">Dựng Video</h3>
                         <p class="program__description">
-                            Làm chủ các kỹ thuật dựng phim chuyên nghiệp, từ quay dựng 
-                            cơ bản đến color grading và visual effects.
+                            Làm chủ kỹ thuật dựng phim chuyên nghiệp, color grading và visual effects.
                         </p>
                         <ul class="program__features">
                             <li><i class="fas fa-check"></i> Adobe Premiere Pro</li>
@@ -175,9 +132,7 @@
                             <li><i class="fas fa-check"></i> Color Grading</li>
                             <li><i class="fas fa-check"></i> Motion Graphics</li>
                         </ul>
-                        <button class="btn btn--small btn--primary btn--primary" data-modal="video">
-                            Xem chi tiết
-                        </button>
+                        <a href="courses.html" class="btn btn--small btn--primary">Xem môn học</a>
                     </article>
 
                     <article class="program__card">
@@ -186,8 +141,7 @@
                         </div>
                         <h3 class="program__title">Animation</h3>
                         <p class="program__description">
-                            Tạo ra các hoạt họa 2D/3D sống động, từ motion graphics 
-                            đến character animation chuyên nghiệp.
+                            Tạo hoạt họa 2D/3D sống động, từ motion graphics đến character animation.
                         </p>
                         <ul class="program__features">
                             <li><i class="fas fa-check"></i> After Effects</li>
@@ -195,9 +149,7 @@
                             <li><i class="fas fa-check"></i> Character Animation</li>
                             <li><i class="fas fa-check"></i> Motion Design</li>
                         </ul>
-                        <button class="btn btn--small btn--primary" data-modal="animation">
-                            Xem chi tiết
-                        </button>
+                        <a href="courses.html" class="btn btn--small btn--primary">Xem môn học</a>
                     </article>
 
                     <article class="program__card">
@@ -206,8 +158,7 @@
                         </div>
                         <h3 class="program__title">Media & Digital Marketing</h3>
                         <p class="program__description">
-                            Chiến lược nội dung đa phương tiện, quản lý social media 
-                            và digital marketing hiệu quả.
+                            Chiến lược nội dung đa phương tiện, quản lý social media và digital marketing.
                         </p>
                         <ul class="program__features">
                             <li><i class="fas fa-check"></i> Content Strategy</li>
@@ -215,81 +166,25 @@
                             <li><i class="fas fa-check"></i> Analytics & SEO</li>
                             <li><i class="fas fa-check"></i> Digital Advertising</li>
                         </ul>
-                        <button class="btn btn--small btn--primary" data-modal="media">
-                            Xem chi tiết
-                        </button>
+                        <a href="courses.html" class="btn btn--small btn--primary">Xem môn học</a>
                     </article>
                 </div>
-                <div style="text-align: center; margin-top: var(--space-2xl);">
-                    <a href="about.html" class="btn btn--primary">
-                        <span>Xem tất cả chuyên ngành</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
             </div>
         </section>
 
-        <!-- Courses Preview Section -->
-        <section class="section" style="background-color: var(--color-off-white);" id="courses">
-            <div class="container">
-                <div class="section__header">
-                    <span class="section__subtitle">Chương trình đào tạo</span>
-                    <h2 class="section__title">Khám phá Chương trình Học</h2>
-                    <p class="section__description">Lộ trình học tập 4 năm với các môn học chuyên sâu từ cơ bản đến nâng cao</p>
-                </div>
-
-                <div class="curriculum__grid" style="max-width: 900px; margin: 0 auto; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-lg);">
-                    <div class="course__card">
-                        <div class="course__header">
-                            <i class="fas fa-pencil-ruler"></i>
-                            <span class="course__credits">3 tín chỉ</span>
-                        </div>
-                        <h4 class="course__name">Nguyên lý Thiết kế cơ bản</h4>
-                        <p class="course__desc">Học các nguyên tắc thiết kế, màu sắc, typography</p>
-                    </div>
-                    <div class="course__card">
-                        <div class="course__header">
-                            <i class="fab fa-adobe"></i>
-                            <span class="course__credits">4 tín chỉ</span>
-                        </div>
-                        <h4 class="course__name">Adobe Creative Suite</h4>
-                        <p class="course__desc">Photoshop, Illustrator, Premiere Pro, After Effects</p>
-                    </div>
-                    <div class="course__card">
-                        <div class="course__header">
-                            <i class="fas fa-cube"></i>
-                            <span class="course__credits">4 tín chỉ</span>
-                        </div>
-                        <h4 class="course__name">3D & Animation</h4>
-                        <p class="course__desc">Blender, Maya, motion graphics, visual effects</p>
-                    </div>
-                </div>
-
-                <div style="text-align: center; margin-top: var(--space-2xl);">
-                    <a href="courses.html" class="btn btn--primary">
-                        <span>Xem toàn bộ chương trình học</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Activities Section -->
-        <section class="activities section" id="activities">
+        <!-- ACTIVITIES: Ảnh hoạt động sinh viên -->
+        <section class="section" id="activities" style="background-color: #F4FAF6;">
             <div class="container">
                 <div class="section__header">
                     <span class="section__subtitle">Cuộc sống sinh viên</span>
                     <h2 class="section__title">Hoạt động & Sự kiện</h2>
-                    <p class="section__description">
-                        Khám phá môi trường học tập năng động và sáng tạo
-                    </p>
+                    <p class="section__description">Khám phá môi trường học tập năng động và sáng tạo</p>
                 </div>
 
-                <!-- Gallery Grid -->
-                <div class="activities__gallery" style="max-width: 900px; margin: 0 auto;">
+                <div class="activities__gallery">
                     <article class="gallery__item">
                         <div class="gallery__image">
-                            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Design Thinking Workshop" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Design Workshop" loading="lazy">
                             <div class="gallery__overlay">
                                 <h3 class="gallery__title">Design Workshop</h3>
                                 <p class="gallery__category">Workshop</p>
@@ -309,7 +204,7 @@
 
                     <article class="gallery__item">
                         <div class="gallery__image">
-                            <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=800&q=80" alt="Student Film Screening" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=800&q=80" alt="Film Screening" loading="lazy">
                             <div class="gallery__overlay">
                                 <h3 class="gallery__title">Film Screening</h3>
                                 <p class="gallery__category">Sự kiện</p>
@@ -318,7 +213,7 @@
                     </article>
                 </div>
 
-                <div style="text-align: center; margin-top: var(--space-2xl);">
+                <div style="text-align: center; margin-top: 40px;">
                     <a href="activities.html" class="btn btn--primary">
                         <span>Xem tất cả hoạt động</span>
                         <i class="fas fa-arrow-right"></i>
@@ -327,44 +222,42 @@
             </div>
         </section>
 
-        <!-- CTA Section -->
-        <section class="contact section" id="contact" style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);">
+        <!-- CTA: Kêu gọi đăng ký -->
+        <section class="section" id="contact" style="background: linear-gradient(135deg, #1A6B3C, #4ECB71);">
             <div class="container" style="text-align: center;">
-                <div style="max-width: 700px; margin: 0 auto;">
-                    <h2 style="font-size: var(--font-3xl); margin-bottom: var(--space-md); font-weight: 700;">
-                        Sẵn Sàng Bắt Đầu Hành Trình Sáng Tạo?
+                <div style="max-width: 650px; margin: 0 auto; color: white;">
+                    <h2 style="font-family: 'Playfair Display', serif; font-size: 36px; margin-bottom: 16px;">
+                        Sẵn sàng bắt đầu hành trình sáng tạo?
                     </h2>
-                    <p style="font-size: var(--font-lg);  margin-bottom: var(--space-2xl); line-height: 1.7;">
-                        Đăng ký tư vấn ngay hôm nay để nhận thông tin chi tiết về chương trình đào tạo, 
-                        học phí và cơ hội nghề nghiệp
+                    <p style="font-size: 17px; margin-bottom: 32px; opacity: 0.9;">
+                        Đăng ký tư vấn để nhận thông tin chi tiết về chương trình đào tạo và cơ hội nghề nghiệp.
                     </p>
-                    <div style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap;">
-                        <a href="contact.html" class="btn" style="background: white; color: var(--color-primary); font-weight: 600; padding: 1rem 2.5rem;">
+                    <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                        <a href="contact.html" class="btn btn--outline-white">
                             <span>Đăng ký tư vấn</span>
                             <i class="fas fa-arrow-right"></i>
                         </a>
-                        <a href="about.html" class="btn" style="background: transparent;  border: 2px solid white; font-weight: 600; padding: 1rem 2.5rem;">
+                        <a href="about.html" class="btn btn--outline-white">
                             <span>Tìm hiểu thêm</span>
-                            <i class="fas fa-info-circle"></i>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
+
     </main>
 
-    <!-- Footer -->
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="container">
             <div class="footer__container">
                 <div class="footer__column">
-                    <a href="#" class="footer__logo">
+                    <a href="index.html" class="footer__logo">
                         <i class="fas fa-graduation-cap"></i>
                         <span>Media Arts</span>
                     </a>
                     <p class="footer__description">
-                        Ngành Truyền thông Đa phương tiện - Nơi đam mê sáng tạo 
-                        được thắp sáng và phát triển.
+                        Ngành Truyền thông Đa phương tiện - Nơi đam mê sáng tạo được thắp sáng.
                     </p>
                     <div class="footer__social">
                         <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
@@ -377,20 +270,20 @@
                 <div class="footer__column">
                     <h3 class="footer__title">Liên kết</h3>
                     <ul class="footer__links">
-                        <li><a href="#about">Giới thiệu</a></li>
-                        <li><a href="#programs">Chuyên ngành</a></li>
-                        <li><a href="#curriculum">Môn học</a></li>
-                        <li><a href="#activities">Hoạt động</a></li>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="about.html">Giới thiệu</a></li>
+                        <li><a href="courses.html">Môn học</a></li>
+                        <li><a href="activities.html">Hoạt động</a></li>
                     </ul>
                 </div>
 
                 <div class="footer__column">
                     <h3 class="footer__title">Hỗ trợ</h3>
                     <ul class="footer__links">
-                        <li><a href="#contact">Liên hệ</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#admission">Tuyển sinh</a></li>
-                        <li><a href="#scholarship">Học bổng</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Tuyển sinh</a></li>
+                        <li><a href="#">Học bổng</a></li>
                     </ul>
                 </div>
 
@@ -407,47 +300,20 @@
             </div>
 
             <div class="footer__bottom">
-                <p class="footer__copyright">
-                    &copy; 2026 Media Arts. Thiết kế bởi sinh viên Truyền thông Đa phương tiện.
-                </p>
+                <p>&copy; 2026 Media Arts. Thiết kế bởi sinh viên Truyền thông Đa phương tiện.</p>
                 <div class="footer__links-bottom">
-                    <a href="#privacy">Chính sách bảo mật</a>
-                    <a href="#terms">Điều khoản sử dụng</a>
+                    <a href="#">Chính sách bảo mật</a>
+                    <a href="#">Điều khoản sử dụng</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Modal for Gallery Images -->
-    <div class="modal" id="image-modal">
-        <button class="modal__close" id="modal-close">
-            <i class="fas fa-times"></i>
-        </button>
-        <div class="modal__content">
-            <img src="" alt="Gallery Image" class="modal__image" id="modal-image">
-            <div class="modal__caption" id="modal-caption"></div>
-        </div>
-    </div>
-
-    <!-- Scroll to Top Button -->
-    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+    <!-- Nút cuộn lên đầu trang -->
+    <button class="scroll-top" id="scroll-top" aria-label="Cuộn lên đầu trang">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- CDN Scripts -->
-    <!-- AOS - Scroll Animations -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    
-    <!-- Swiper - Carousel/Slider -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
-    <!-- Lucide Icons -->
-    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
-    
-    <!-- GLightbox - Image Lightbox -->
-    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-
-    <!-- JavaScript Files -->
     <script src="script.js"></script>
 </body>
 </html>

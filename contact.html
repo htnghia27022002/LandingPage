@@ -3,122 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Liên hệ tư vấn tuyển sinh và thông tin ngành Truyền thông đa phương tiện">
+    <meta name="description" content="Liên hệ tư vấn tuyển sinh ngành Truyền thông đa phương tiện">
     <title>Liên hệ | Truyền thông Đa phương tiện</title>
-    
-    <!-- CSS Files -->
+
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
-    
-    <!-- AOS - Scroll Animations -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header & Navigation -->
+
+    <!-- HEADER -->
     <header class="header" id="header">
         <nav class="nav container">
             <a href="index.html" class="nav__logo">
                 <i class="fas fa-graduation-cap"></i>
                 <span>Media Arts</span>
             </a>
-            
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Trang chủ</a></li>
-                    <li class="nav__item"><a href="about.html" class="nav__link">Giới thiệu</a></li>
-                    <li class="nav__item"><a href="courses.html" class="nav__link">Môn học</a></li>
-                    <li class="nav__item"><a href="activities.html" class="nav__link">Hoạt động</a></li>
-                    <li class="nav__item"><a href="contact.html" class="nav__link active">Liên hệ</a></li>
+                    <li><a href="index.html" class="nav__link">Trang chủ</a></li>
+                    <li><a href="about.html" class="nav__link">Giới thiệu</a></li>
+                    <li><a href="courses.html" class="nav__link">Môn học</a></li>
+                    <li><a href="activities.html" class="nav__link">Hoạt động</a></li>
+                    <li><a href="contact.html" class="nav__link active">Liên hệ</a></li>
                 </ul>
                 <div class="nav__close" id="nav-close">
                     <i class="fas fa-times"></i>
                 </div>
             </div>
-
             <div class="nav__toggle" id="nav-toggle">
                 <i class="fas fa-bars"></i>
             </div>
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main class="main">
-        <!-- Page Hero -->
-        <section class="page-hero" style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);">
+
+        <!-- BANNER ĐẦU TRANG -->
+        <section class="page-hero">
             <div class="container">
-                <div class="page-hero__content" data-aos="fade-up">
-                    <h1 class="page-hero__title" style="color: white;">Liên hệ với chúng tôi</h1>
-                    <p class="page-hero__description" style="color: var(--color-off-white);">
-                        Hãy để lại thông tin, chúng tôi sẽ liên hệ tư vấn ngay
-                    </p>
-                </div>
+                <h1 class="page-hero__title">Liên hệ với chúng tôi</h1>
+                <p class="page-hero__description">Hãy để lại thông tin, chúng tôi sẽ tư vấn ngay</p>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section class="section contact">
+        <!-- FORM LIÊN HỆ + THÔNG TIN -->
+        <section class="section">
             <div class="container">
                 <div class="contact__grid">
-                    <!-- Contact Info -->
-                    <div class="contact__info" data-aos="fade-right">
-                        <h2 style="color: var(--color-accent);">Thông tin liên hệ</h2>
-                        <p style="margin-bottom: var(--space-xl); color: var(--color-gray-700);">
-                            Chúng tôi luôn sẵn sàng hỗ trợ và giải đáp mọi thắc mắc của bạn về chương trình đào tạo.
-                        </p>
+
+                    <!-- Thông tin liên hệ bên trái -->
+                    <div class="contact__info">
+                        <h2>Thông tin liên hệ</h2>
+                        <p>Chúng tôi luôn sẵn sàng hỗ trợ và giải đáp mọi thắc mắc của bạn.</p>
 
                         <div class="info__item">
-                            <div class="info__icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
+                            <div class="info__icon"><i class="fas fa-map-marker-alt"></i></div>
                             <div class="info__content">
-                                <h4 style="color: var(--color-gray-900);">Địa chỉ</h4>
-                                <p style="color: var(--color-gray-700);">Số 268 Lý Thường Kiệt, Phường 14, Quận 10, TP. Hồ Chí Minh</p>
+                                <h4>Địa chỉ</h4>
+                                <p>Số 268 Lý Thường Kiệt, Phường 14, Quận 10, TP. Hồ Chí Minh</p>
                             </div>
                         </div>
 
                         <div class="info__item">
-                            <div class="info__icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
+                            <div class="info__icon"><i class="fas fa-phone"></i></div>
                             <div class="info__content">
-                                <h4 style="color: var(--color-gray-900);">Điện thoại</h4>
-                                <p style="color: var(--color-gray-700);">(028) 3864 1122</p>
-                                <p style="color: var(--color-gray-700);">Hotline: 0909 123 456</p>
+                                <h4>Điện thoại</h4>
+                                <p>(028) 3864 1122</p>
+                                <p>Hotline: 0909 123 456</p>
                             </div>
                         </div>
 
                         <div class="info__item">
-                            <div class="info__icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
+                            <div class="info__icon"><i class="fas fa-envelope"></i></div>
                             <div class="info__content">
-                                <h4 style="color: var(--color-gray-900);">Email</h4>
-                                <p style="color: var(--color-gray-700);">multimedia@university.edu.vn</p>
-                                <p style="color: var(--color-gray-700);">admissions@university.edu.vn</p>
+                                <h4>Email</h4>
+                                <p>multimedia@university.edu.vn</p>
                             </div>
                         </div>
 
                         <div class="info__item">
-                            <div class="info__icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
+                            <div class="info__icon"><i class="fas fa-clock"></i></div>
                             <div class="info__content">
-                                <h4 style="color: var(--color-gray-900);">Giờ làm việc</h4>
-                                <p style="color: var(--color-gray-700);">Thứ 2 - Thứ 6: 8:00 - 17:00</p>
-                                <p style="color: var(--color-gray-700);">Thứ 7: 8:00 - 12:00</p>
-                                <p style="color: var(--color-gray-700);">Chủ Nhật: Nghỉ</p>
+                                <h4>Giờ làm việc</h4>
+                                <p>Thứ 2 - Thứ 6: 8:00 - 17:00</p>
+                                <p>Thứ 7: 8:00 - 12:00</p>
                             </div>
                         </div>
 
-                        <div class="social__links" style="margin-top: var(--space-xl);">
-                            <h4 style="margin-bottom: var(--space-md); color: var(--color-gray-900);">Theo dõi chúng tôi</h4>
+                        <div class="social__links">
+                            <h4>Theo dõi chúng tôi</h4>
                             <div class="social__icons">
                                 <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -128,118 +104,81 @@
                         </div>
                     </div>
 
-                    <!-- Contact Form -->
-                    <div class="contact__form-wrapper" data-aos="fade-left">
-                        <form id="contact-form" class="contact__form" novalidate>
-                            <h3 style="margin-bottom: var(--space-lg);">Gửi tin nhắn</h3>
+                    <!-- Form liên hệ bên phải -->
+                    <div>
+                        <form id="contact-form" novalidate>
+                            <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; margin-bottom: 20px; color: #0D2B1A;">Gửi tin nhắn</h3>
 
-                            <!-- Full Name Field -->
+                            <!-- Họ tên -->
                             <div class="form__group">
                                 <label for="fullname" class="form__label">
                                     Họ và tên <span class="required">*</span>
                                 </label>
-                                <input 
-                                    type="text" 
-                                    id="fullname" 
-                                    name="fullname" 
-                                    class="form__input" 
-                                    placeholder="Nhập họ và tên của bạn"
-                                    required
-                                    minlength="2"
-                                >
+                                <input type="text" id="fullname" name="fullname" class="form__input"
+                                    placeholder="Nhập họ và tên" required>
                                 <span class="form__error" id="fullname-error"></span>
                             </div>
 
-                            <!-- Email Field -->
+                            <!-- Email -->
                             <div class="form__group">
                                 <label for="email" class="form__label">
                                     Email <span class="required">*</span>
                                 </label>
-                                <input 
-                                    type="email" 
-                                    id="email" 
-                                    name="email" 
-                                    class="form__input" 
-                                    placeholder="example@email.com"
-                                    required
-                                >
+                                <input type="email" id="email" name="email" class="form__input"
+                                    placeholder="example@email.com" required>
                                 <span class="form__error" id="email-error"></span>
                             </div>
 
-                            <!-- Phone Field -->
+                            <!-- Số điện thoại -->
                             <div class="form__group">
                                 <label for="phone" class="form__label">
                                     Số điện thoại <span class="required">*</span>
                                 </label>
-                                <input 
-                                    type="tel" 
-                                    id="phone" 
-                                    name="phone" 
-                                    class="form__input" 
-                                    placeholder="0909123456"
-                                    required
-                                    pattern="[0-9]{10}"
-                                    maxlength="10"
-                                >
+                                <input type="tel" id="phone" name="phone" class="form__input"
+                                    placeholder="0909123456" required maxlength="10">
                                 <span class="form__error" id="phone-error"></span>
                             </div>
 
-                            <!-- Subject Field -->
+                            <!-- Chủ đề -->
                             <div class="form__group">
-                                <label for="subject" class="form__label">
-                                    Chủ đề <span class="required">*</span>
-                                </label>
-                                <select 
-                                    id="subject" 
-                                    name="subject" 
-                                    class="form__select"
-                                    required
-                                >
+                                <label for="subject" class="form__label">Chủ đề</label>
+                                <select id="subject" name="subject" class="form__select">
                                     <option value="">-- Chọn chủ đề --</option>
                                     <option value="admissions">Tư vấn tuyển sinh</option>
                                     <option value="courses">Hỏi về môn học</option>
                                     <option value="partnership">Hợp tác</option>
                                     <option value="other">Khác</option>
                                 </select>
-                                <span class="form__error" id="subject-error"></span>
                             </div>
 
-                            <!-- Message Field -->
+                            <!-- Nội dung -->
                             <div class="form__group">
-                                <label for="message" class="form__label">
-                                    Nội dung <span class="required">*</span>
-                                </label>
-                                <textarea 
-                                    id="message" 
-                                    name="message" 
-                                    class="form__textarea" 
-                                    placeholder="Nhập nội dung tin nhắn của bạn (tối thiểu 20 ký tự)"
-                                    required
-                                    minlength="20"
-                                    rows="6"
-                                ></textarea>
-                                <span class="form__error" id="message-error"></span>
+                                <label for="message" class="form__label">Nội dung</label>
+                                <textarea id="message" name="message" class="form__textarea"
+                                    placeholder="Nhập nội dung tin nhắn..." rows="5"></textarea>
                             </div>
 
-                            <!-- Submit Button -->
+                            <!-- Nút gửi -->
                             <button type="submit" class="btn btn--primary btn--full" id="submit-btn">
                                 <span>Gửi tin nhắn</span>
                                 <i class="fas fa-paper-plane"></i>
                             </button>
 
-                            <!-- Success Message -->
-                            <div class="form__success" id="success-message" style="display: none;">
+                            <!-- Thông báo thành công (ẩn mặc định, JS sẽ hiện ra) -->
+                            <div class="form__success" id="success-message">
                                 <i class="fas fa-check-circle"></i>
-                                <p>Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi trong thời gian sớm nhất.</p>
+                                Cảm ơn bạn! Chúng tôi sẽ phản hồi trong thời gian sớm nhất.
                             </div>
                         </form>
                     </div>
+
                 </div>
             </div>
         </section>
+
     </main>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="footer__container">
@@ -248,10 +187,7 @@
                         <i class="fas fa-graduation-cap"></i>
                         <span>Media Arts</span>
                     </a>
-                    <p class="footer__description">
-                        Ngành Truyền thông Đa phương tiện - Nơi đam mê sáng tạo 
-                        được thắp sáng và phát triển.
-                    </p>
+                    <p class="footer__description">Ngành Truyền thông Đa phương tiện - Nơi đam mê sáng tạo được thắp sáng.</p>
                     <div class="footer__social">
                         <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
@@ -259,7 +195,6 @@
                         <a href="#" class="footer__social-link"><i class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
-
                 <div class="footer__column">
                     <h3 class="footer__title">Liên kết</h3>
                     <ul class="footer__links">
@@ -269,50 +204,38 @@
                         <li><a href="activities.html">Hoạt động</a></li>
                     </ul>
                 </div>
-
                 <div class="footer__column">
                     <h3 class="footer__title">Hỗ trợ</h3>
                     <ul class="footer__links">
                         <li><a href="contact.html">Liên hệ</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#admission">Tuyển sinh</a></li>
-                        <li><a href="#scholarship">Học bổng</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Tuyển sinh</a></li>
+                        <li><a href="#">Học bổng</a></li>
                     </ul>
                 </div>
-
                 <div class="footer__column">
                     <h3 class="footer__title">Đăng ký nhận tin</h3>
                     <p class="footer__newsletter-text">Cập nhật tin tức và sự kiện mới nhất</p>
                     <form class="footer__newsletter">
                         <input type="email" placeholder="Email của bạn" class="newsletter__input">
-                        <button type="submit" class="newsletter__btn">
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
+                        <button type="submit" class="newsletter__btn"><i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
-
             <div class="footer__bottom">
-                <p class="footer__copyright">
-                    &copy; 2026 Media Arts. Thiết kế bởi sinh viên Truyền thông Đa phương tiện.
-                </p>
+                <p>&copy; 2026 Media Arts. Thiết kế bởi sinh viên Truyền thông Đa phương tiện.</p>
                 <div class="footer__links-bottom">
-                    <a href="#privacy">Chính sách bảo mật</a>
-                    <a href="#terms">Điều khoản sử dụng</a>
+                    <a href="#">Chính sách bảo mật</a>
+                    <a href="#">Điều khoản sử dụng</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
-    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+    <button class="scroll-top" id="scroll-top" aria-label="Cuộn lên đầu trang">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- CDN Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-
-    <!-- JavaScript Files -->
     <script src="script.js"></script>
 </body>
 </html>

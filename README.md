@@ -1,222 +1,348 @@
 # Landing Page - Truyền thông Đa phương tiện
 
-Landing page giới thiệu ngành học Truyền thông Đa phương tiện với các chuyên ngành: Thiết kế Đồ họa, Dựng Video, Animation, và Media & Digital Marketing.
-
-## 📁 Cấu trúc dự án
-
-```
-LandingPage/
-├── index.html              # File HTML chính
-├── css/
-│   ├── variables.css       # CSS Variables (màu sắc, fonts, spacing)
-│   ├── layout.css          # Layout chính (container, grid, flex)
-│   ├── components.css      # Components (buttons, cards, forms)
-│   ├── sections.css        # Styling từng section
-│   └── responsive.css      # Media queries cho responsive
-├── js/
-│   ├── main.js            # Khởi tạo chính, utilities
-│   ├── navigation.js      # Navigation menu, smooth scroll
-│   ├── slider.js          # Image slider, gallery filter, tabs
-│   ├── modal.js           # Modal popups
-│   ├── form.js            # Form validation
-│   └── animations.js      # Scroll animations, effects
-└── README.md              # File này
-```
-
-## ✨ Tính năng
-
-### HTML & Cấu trúc (Semantic HTML)
-- ✅ Sử dụng semantic tags: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`
-- ✅ Cấu trúc heading hợp lý (h1-h6)
-- ✅ Alt text cho images, label cho inputs
-- ✅ Accessibility attributes (aria-label)
-- ✅ Tổ chức nội dung logic và rõ ràng
-
-### CSS & Giao diện
-- ✅ **Layout responsive** với Flexbox và CSS Grid
-- ✅ **2 breakpoints**: Mobile (<768px) và Desktop (>=768px)
-- ✅ **Design system** với CSS Variables
-- ✅ **Components tái sử dụng**: buttons, cards, forms
-- ✅ **Animations & Transitions** mượt mà
-- ✅ **Dark Mode** toggle
-- ✅ **Modern UI** với gradients và shadows
-
-### JavaScript & Tương tác
-- ✅ **Mobile Navigation** - Menu hamburger responsive
-- ✅ **Smooth Scroll** - Cuộn mượt giữa các section
-- ✅ **Image Slider** - Carousel tự động với controls
-- ✅ **Gallery Filter** - Lọc hình ảnh theo category
-- ✅ **Tabs Navigation** - Chuyển đổi nội dung môn học
-- ✅ **Modal Popups** - Xem chi tiết hình ảnh và chương trình
-- ✅ **Scroll Animations** - Hiệu ứng khi cuộn trang
-- ✅ **Counter Animation** - Số liệu thống kê tăng dần
-- ✅ **Scroll to Top** button
-
-### Form & Validation
-- ✅ **Contact Form** với 3 trường bắt buộc
-- ✅ **Real-time Validation** - Kiểm tra ngay khi nhập
-- ✅ **Custom Error Messages** - Thông báo lỗi tiếng Việt
-- ✅ **Input Validation**:
-  - Họ tên: Ít nhất 2 ký tự, chỉ chữ cái
-  - Email: Format chuẩn email
-  - Số điện thoại: Format số ĐT Việt Nam
-- ✅ **Success/Error States** - Visual feedback
-- ✅ **Form Reset** - Xóa form hợp lệ
-
-## 🎨 Sections trong trang
-
-1. **Header & Navigation** - Sticky header với menu responsive
-2. **Hero Section** - Giới thiệu ngành học với animated cards
-3. **About Section** - Về trường/ngành với thống kê
-4. **Programs Section** - 4 chuyên ngành chính
-5. **Curriculum Section** - Môn học theo năm (với tabs)
-6. **Activities Section** - Gallery hoạt động SV (filter + slider)
-7. **Contact Section** - Form liên hệ với validation
-8. **Footer** - Thông tin, links, newsletter
-
-## 🚀 Hướng dẫn sử dụng
-
-### 1. Mở trang web
-- Mở file `index.html` bằng trình duyệt web
-- Hoặc sử dụng Live Server extension trong VS Code
-
-### 2. Responsive Testing
-- Desktop: >= 1024px
-- Tablet: 768px - 1024px
-- Mobile: < 768px
-
-Sử dụng DevTools (F12) để test responsive:
-```
-- iPhone SE: 375px
-- iPhone 12 Pro: 390px
-- iPad: 768px
-- Desktop: 1280px+
-```
-
-### 3. Features Testing
-
-#### Navigation
-- Click vào menu items để smooth scroll đến section
-- Trên mobile: Click hamburger icon để mở menu
-- Active link tự động highlight khi scroll
-
-#### Gallery Filter
-- Click các nút filter để lọc hình ảnh
-- Click vào icon search để xem modal phóng to
-
-#### Tabs (Môn học)
-- Click "Năm 1", "Năm 2", "Năm 3", "Năm 4"
-- Nội dung chuyển đổi với animation
-
-#### Slider
-- Tự động chuyển sau 5 giây
-- Click prev/next để điều khiển
-- Click dots để nhảy đến slide cụ thể
-- Swipe trên mobile
-- Pause khi hover (desktop)
-
-#### Form Validation
-- Nhập thông tin không hợp lệ để thấy error
-- Nhập đúng để thấy success state
-- Submit form để thấy loading state
-- Reset để xóa form
-
-#### Dark Mode
-- Click icon moon/sun ở header
-- Theme được lưu vào localStorage
-
-## 🎯 Yêu cầu đã đáp ứng
-
-### B. HTML & cấu trúc nội dung (20đ)
-- ✅ (5đ) Semantic HTML tốt
-- ✅ (5đ) Tổ chức nội dung hợp lý
-- ✅ (5đ) Chuẩn truy cập: alt, label, rõ ràng
-- ✅ (5đ) Hợp lệ và gọn: indent, class/id hợp lý
-
-### C. CSS & giao diện (20đ)
-- ✅ (5đ) Layout chuẩn: Flex/Grid, responsive 2 breakpoint
-- ✅ (5đ) Tính nhất quán: font, màu, spacing, components
-- ✅ (5đ) Tính thẩm mỹ: cân đối, dễ đọc, tương phản tốt
-- ✅ (5đ) Tổ chức CSS tốt: tách file, comment, tránh inline
-
-### D. JavaScript & tương tác (15đ)
-- ✅ (4đ) Chức năng tương tác: filter, tab, modal, gallery, slider
-- ✅ (4đ) Xử lý DOM tốt: query đúng, event listener, cập nhật UI
-- ✅ (4đ) Code JS sạch: tách hàm, đặt tên rõ, tránh lặp
-- ✅ (3đ) Trang thái/độ tin cậy: error handling, disable button
-
-### E. Form cơ bản & validation (15đ)
-- ✅ (4đ) Form đúng cấu trúc: label, input types, placeholder
-- ✅ (4đ) Validation JS: rỗng, email đúng format, độ dài...
-- ✅ (4đ) UX form: focus state, message thành công, reset/clear
-- ✅ (3đ) Không cần backend nhưng có preventDefault, show summary
-
-## 🛠️ Technologies Used
-
-- **HTML5** - Semantic markup
-- **CSS3** - Variables, Flexbox, Grid, Animations
-- **JavaScript (ES6+)** - Modules, Arrow functions, Template literals
-- **Font Awesome 6.5** - Icons
-- **Google Fonts** - Poppins & Playfair Display
-- **Unsplash** - Placeholder images
-
-## 📱 Browser Support
-
-- Chrome (recommended)
-- Firefox
-- Safari
-- Edge
-- Mobile browsers (iOS Safari, Chrome Mobile)
-
-## 💡 Tips
-
-### Customize Colors
-Chỉnh sửa trong `css/variables.css`:
-```css
-:root {
-  --color-primary: #6366f1;
-  --color-secondary: #ec4899;
-  --color-accent: #f59e0b;
-}
-```
-
-### Add More Slides
-Thêm slide mới trong HTML:
-```html
-<div class="slider__slide">
-  <img src="your-image.jpg" alt="Description">
-  <p class="slider__caption">Your caption</p>
-</div>
-```
-
-### Add More Gallery Items
-```html
-<article class="gallery__item" data-category="workshop">
-  <div class="gallery__image">
-    <img src="your-image.jpg" alt="Description">
-    <div class="gallery__overlay">
-      <h3 class="gallery__title">Title</h3>
-      <p class="gallery__category">Category</p>
-      <button class="gallery__btn" data-image="7">
-        <i class="fas fa-search-plus"></i>
-      </button>
-    </div>
-  </div>
-</article>
-```
-
-## 🐛 Known Issues
-
-- None currently
-
-## 📝 License
-
-Dự án này được tạo cho mục đích học tập.
-
-## 👨‍💻 Author
-
-Sinh viên ngành Truyền thông Đa phương tiện
+Landing page giới thiệu ngành học Truyền thông Đa phương tiện với 4 chuyên ngành: Thiết kế Đồ họa, Dựng Video, Animation, và Media & Digital Marketing.
 
 ---
 
-**Chúc bạn code vui vẻ! 🚀**
+## 📁 Cấu trúc file
+
+```
+LandingPage/
+├── index.html        ← Trang chủ
+├── about.html        ← Trang giới thiệu ngành
+├── courses.html      ← Trang môn học (4 năm)
+├── activities.html   ← Trang hoạt động sinh viên
+├── contact.html      ← Trang liên hệ + form
+├── style.css         ← Toàn bộ CSS của dự án
+├── script.js         ← Toàn bộ JavaScript của dự án
+└── README.md         ← File này
+```
+
+---
+
+## 🌐 Cách chạy trang web
+
+1. Mở thư mục dự án
+2. Mở file `index.html` bằng trình duyệt (Chrome, Firefox, Edge...)
+3. Hoặc dùng **Live Server** trong VS Code để tự reload khi sửa code
+
+---
+
+## 📄 HTML – Cấu trúc từng trang
+
+Mỗi trang HTML đều có **3 phần chính**:
+
+```
+<header>  ← Thanh menu (navigation) ở trên cùng
+<main>    ← Nội dung chính của trang
+<footer>  ← Chân trang ở dưới cùng
+```
+
+### Cấu trúc của Header (menu)
+
+```html
+<header class="header" id="header">
+    <nav class="nav container">
+        <!-- Logo -->
+        <a href="index.html" class="nav__logo">Media Arts</a>
+
+        <!-- Danh sách link menu -->
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li><a href="index.html" class="nav__link active">Trang chủ</a></li>
+                <li><a href="about.html" class="nav__link">Giới thiệu</a></li>
+                ...
+            </ul>
+            <!-- Nút X để đóng menu trên điện thoại -->
+            <div class="nav__close" id="nav-close">...</div>
+        </div>
+
+        <!-- Nút 3 gạch (hamburger) - chỉ hiện trên điện thoại -->
+        <div class="nav__toggle" id="nav-toggle">...</div>
+    </nav>
+</header>
+```
+
+### Cấu trúc của một Section (phần nội dung)
+
+```html
+<section class="section">
+    <div class="container">             <!-- Giới hạn chiều rộng, canh giữa -->
+        <div class="section__header">   <!-- Tiêu đề phần -->
+            <span class="section__subtitle">Nhãn nhỏ trên</span>
+            <h2 class="section__title">Tiêu đề chính</h2>
+            <p class="section__description">Mô tả ngắn</p>
+        </div>
+        <!-- Nội dung chính của section -->
+    </div>
+</section>
+```
+
+---
+
+## 🎨 CSS – Style của trang
+
+Toàn bộ CSS nằm trong file `style.css`. File được chia thành các phần rõ ràng với comment như:
+
+```
+/* ===== TÊN PHẦN ===== */
+```
+
+### Biến CSS (CSS Variables)
+
+Ở đầu file có khai báo biến màu và font chung:
+
+```css
+:root {
+    --green: #1A6B3C;       /* Màu xanh chính */
+    --green-light: #4ECB71; /* Màu xanh nhạt */
+    --white: #ffffff;
+    --text-dark: #0D2B1A;   /* Màu chữ tối */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'DM Sans', sans-serif;
+}
+```
+
+Cách dùng biến:
+```css
+/* Thay vì viết trực tiếp */
+color: #1A6B3C;
+
+/* Dùng biến cho dễ thay đổi sau này */
+color: var(--green);
+```
+
+### Container – Khung bao nội dung
+
+```css
+.container {
+    max-width: 1200px;  /* Giới hạn chiều rộng tối đa */
+    margin: 0 auto;     /* Canh giữa trang */
+    padding: 0 20px;    /* Lề 2 bên */
+}
+```
+
+### Grid Layout – Chia cột bằng CSS Grid
+
+```css
+/* 4 cột đều nhau */
+.programs__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+/* Trên điện thoại → đổi thành 1 cột */
+@media (max-width: 768px) {
+    .programs__grid {
+        grid-template-columns: 1fr;
+    }
+}
+```
+
+### Responsive – Trang web tự co giãn theo màn hình
+
+Ở cuối file `style.css` có phần `@media (max-width: 768px)`:
+
+```css
+/* Chỉ áp dụng khi màn hình < 768px (điện thoại) */
+@media (max-width: 768px) {
+    .hero__title { font-size: 34px; }       /* Chữ nhỏ lại */
+    .hero__container { grid-template-columns: 1fr; } /* 1 cột */
+    .nav__toggle { display: block; }        /* Hiện nút hamburger */
+}
+```
+
+---
+
+## ⚡ JavaScript – Tương tác của trang
+
+Toàn bộ JS nằm trong file `script.js`. Có **5 chức năng chính**:
+
+### 1. Khởi động khi trang tải xong
+
+```js
+document.addEventListener('DOMContentLoaded', function() {
+    // Code ở đây chạy sau khi HTML tải xong
+    initMobileMenu();
+    initStickyHeader();
+    initScrollTop();
+    initTabs();
+    initContactForm();
+});
+```
+
+### 2. Menu hamburger (điện thoại)
+
+**Vấn đề:** Trên điện thoại, menu không hiện vì màn hình nhỏ.  
+**Giải pháp:** Dùng nút ≡ để mở/đóng menu bằng cách thêm/xóa class `show`.
+
+```js
+function initMobileMenu() {
+    var toggle = document.getElementById('nav-toggle'); // Nút ≡
+    var menu   = document.getElementById('nav-menu');   // Khung menu
+
+    toggle.addEventListener('click', function() {
+        menu.classList.add('show'); // Thêm class → CSS sẽ trượt menu ra
+    });
+}
+```
+
+CSS phần responsive:
+```css
+/* Menu ẩn mặc định (trượt ra ngoài màn hình) */
+.nav__menu { right: -100%; }
+
+/* Khi có class "show" → trượt vào trong */
+.nav__menu.show { right: 0; }
+```
+
+### 3. Header nổi bật khi cuộn
+
+**Vấn đề:** Cần phân biệt header khi đang ở đầu trang vs khi đã cuộn xuống.  
+**Giải pháp:** Kiểm tra `window.scrollY`, nếu > 50px thì thêm class `scrolled`.
+
+```js
+function initStickyHeader() {
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');    // Thêm bóng đổ đậm
+        } else {
+            header.classList.remove('scrolled'); // Bỏ bóng đổ
+        }
+    });
+}
+```
+
+### 4. Nút cuộn lên đầu trang
+
+**Vấn đề:** Khi cuộn xuống xa, muốn quay lại đầu trang nhanh.  
+**Giải pháp:** Nút ẩn mặc định, hiện ra khi cuộn > 400px, bấm vào thì cuộn về trên.
+
+```js
+function initScrollTop() {
+    // Hiện/ẩn nút
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 400) {
+            btn.classList.add('show');
+        } else {
+            btn.classList.remove('show');
+        }
+    });
+
+    // Cuộn về đầu khi bấm
+    btn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
+```
+
+### 5. Chuyển tab (Năm 1 / Năm 2 / Năm 3 / Năm 4)
+
+**Vấn đề:** Cần hiện/ẩn nội dung theo tab được chọn.  
+**Giải pháp:** Bấm vào tab → xóa active khỏi tất cả → thêm active vào tab được chọn.
+
+```js
+// HTML - Tab button có data-tab="year1"
+// <button class="tab__button" data-tab="year1">Năm 1</button>
+
+// HTML - Nội dung tab có id="year1"
+// <div class="tab__content" id="year1">...</div>
+
+function initTabs() {
+    tabBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var targetId = this.getAttribute('data-tab'); // Lấy id
+
+            // Bỏ active khỏi tất cả nút
+            allButtons.forEach(b => b.classList.remove('active'));
+            this.classList.add('active'); // Active nút này
+
+            // Ẩn tất cả nội dung
+            allContents.forEach(c => c.classList.remove('active'));
+
+            // Hiện nội dung tương ứng
+            document.getElementById(targetId).classList.add('active');
+        });
+    });
+}
+```
+
+CSS phần tabs:
+```css
+.tab__content { display: none; }        /* Ẩn tất cả */
+.tab__content.active { display: block; } /* Chỉ hiện cái có class "active" */
+```
+
+### 6. Kiểm tra form liên hệ
+
+**Vấn đề:** Người dùng có thể bỏ trống hoặc nhập sai định dạng.  
+**Giải pháp:** Khi bấm Gửi → kiểm tra từng trường → hiện lỗi nếu sai.
+
+```js
+form.addEventListener('submit', function(e) {
+    e.preventDefault(); // Ngăn form gửi đi (vì không có server)
+
+    // Kiểm tra họ tên
+    if (nameInput.value.trim().length < 2) {
+        nameError.textContent = 'Vui lòng nhập ít nhất 2 ký tự';
+        nameInput.classList.add('error'); // CSS: viền đỏ
+    }
+
+    // Kiểm tra email bằng regex
+    var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value);
+    if (!emailOk) {
+        emailError.textContent = 'Email không đúng định dạng';
+    }
+
+    // Nếu tất cả đúng → giả lập thành công
+    if (ok) {
+        form.reset();
+        successMessage.style.display = 'block';
+    }
+});
+```
+
+---
+
+## 📱 Test Responsive
+
+Dùng DevTools (nhấn F12) → icon điện thoại → chọn kích thước:
+
+| Thiết bị    | Chiều rộng |
+|-------------|-----------|
+| Điện thoại  | 375px     |
+| Tablet      | 768px     |
+| Desktop     | 1280px+   |
+
+---
+
+## 🔤 Font và Icon
+
+- **Font chữ**: Lấy từ Google Fonts (Playfair Display + DM Sans)
+- **Icon**: Font Awesome 6.5 (dùng thẻ `<i class="fas fa-...">`)
+
+Ví dụ icon:
+```html
+<i class="fas fa-graduation-cap"></i>  <!-- Mũ tốt nghiệp -->
+<i class="fas fa-arrow-right"></i>     <!-- Mũi tên phải -->
+<i class="fas fa-bars"></i>            <!-- Icon 3 gạch (hamburger) -->
+```
+
+---
+
+## 🎯 Luồng hoạt động tóm tắt
+
+```
+Người dùng mở trang
+       ↓
+HTML hiển thị nội dung
+       ↓
+CSS tạo giao diện đẹp (màu sắc, layout, responsive)
+       ↓
+JS thêm tương tác (menu mobile, scroll, tabs, form)
+```
+
+---
+
+**Chúc bạn code vui! 🚀**
